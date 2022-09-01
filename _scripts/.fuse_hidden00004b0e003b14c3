@@ -18,6 +18,7 @@ if [ -d "_scripts/publish.d" ]; then
   cp -r "_scripts/publish.d" "/tmp/publish.d"
 fi
 bundle exec jekyll b -d /tmp/gh-pages-publish
+cp CNAME /tmp/CNAME
 git checkout gh-pages
 git pull
 git ls-files -z -- . ':!:.git*' | xargs -0 rm -f
