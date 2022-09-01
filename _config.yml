@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "/Grape-Academic-Theme"
+baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
@@ -11,24 +11,23 @@ blog: True
 lang: en
 
 # Search engine optimization settings
-title: Grape Academic Theme
+title: Tu Hoang
 tagline: A jekyll theme for academic portfolios
-description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
-twitter:
-  username: chrjabs
-  card: A jekyll theme for academic portfolios
+description: The personal website of Tu Hoang. Privacy and Security Researcher in various topics (Decentralized Systems, Blockchain, Differential Privacy, Machine Learning/Deep Learnling).
+author: Tu Hoang (tuhoang)
+# twitter:
+#   username: chrjabs
+#   card: A jekyll theme for academic portfolios
 logo: /assets/img/smile.png
 social:
-  name: Christoph Jabs
+  name: Tu Hoang
   links:
-    - https://twitter.com/chrjabs
-    - https://github.com/chrjabs
-locale: en_GB
+    - https://github.com/tuhoag
+locale: en_IT
 
 # Page Settings
 theme_settings:
-  title: Grape Academic Theme
+  title: Tu Hoang Personal Website
 
   experience_title: EXPERIENCE
   interests_title: RESEARCH INTERESTS
