@@ -19,13 +19,12 @@
             </div>
             <div class="meta">
               {% if project.skills %}
-              &middot;
-              {% for skill in project.skills %}
-              <span>#{{ skill }}</span>
-              {% endfor %}
+                {% for skill in project.skills %}
+                <span>#{{ skill }}</span>
+                {% endfor %}
               {% endif %}
             </div>
-            <div class="description">{{ project.description }}</div>
+            <div class="description">{{ project.summary }}</div>
           </div>
           <div class="icons">
             {% if project.url %}

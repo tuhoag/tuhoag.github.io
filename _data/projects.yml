@@ -1,42 +1,197 @@
-- project :
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
-    image:
-      path: "portfolio.png" # path: assets/project/
-      alt: "A screenshot of the portfolio page"
-    date: 05/2022 &ndash; Developing
-    title: Grape-Theme
-    summary: Academic portfolio jekyll theme.
-    description: A modification of the Grape-Theme for jekyll to be useable as an academic portfolio.
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    # url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
+    # image:
+    #   path: "portfolio.png" # path: assets/project/
+    #   alt: "A screenshot of the portfolio page"
+    year: 2019
+    status:
+    date: 2019
+    title: Directed GraphGraph Anonymization
+    skills:
+      - Python
+      - Algorithm Design
+      - Discrete Optimization
+    summary: An anonymization algorithm for static directed graphs.
+    description: >
+      This project allows data providers to publish static directed graphs. The state-of-the-art directed graph anonymization algorithm for Paired-k-degree is not reliable enough to always generate anonymized directed graphs. As such, this project's contribution is to design a new anonymization algorithm fixing the issue while enhancing the quality of anonymized graphs.
     contents:
-        - title: 1. Portfolio Page
-          image:
-            path: portfolio.png
-            alt: "A screenshot of the portfolio page"
-          description: <li>Concise portfolio page</li>
-            <li>Recent publications</li>
-            <li>Projects</li>
-        - title: 2. Optional Blog Functionality
-          image:
-            path: home.png
-            alt: "A screenshot of the blog page"
-          description: <li>Responsive Layout</li>
-            <li>Tags</li> 
-            <li>Pagination</li>
-        - title: 3. Tags Page
-          image:
-            path: tags.png
-            alt: "A screenshot of the tags page"
-          description: <li>Responsive Layout</li> 
-            <li>Tags</li> 
+
 
 - project:
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    # url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
+    # image:
+    #   path: "portfolio.png" # path: assets/project/
+    #   alt: "A screenshot of the portfolio page"
+    year: 2019
+    status:
+    date: 2019
+    title: Static Knowledge Graph Anonymization
+    skills:
+      - Python
+      - PyTorch
+      - Algorithm Design
+      - Discrete Optimization
+      - Scikit-Learn
+    summary: A k-anonymity approach for publishing static knowledge graphs.
+    description: >
+      This project allows data providers to publish static knowledge graphs (KGs). The project has three main contributions: k-Attribute Degree principle, two information loss metrics, and the clusters-based KG anonymization.
+    contents:
+        - title: k-Attribute Degree Principle
+          # image:
+          #   path: portfolio.png
+          #   alt: "A screenshot of the portfolio page"
+          description: >
+            k-Attribute Degree (k-ad) protects data owners from being re-identified with a confidence higher than 1/k. k-ad can replace k-anonymity principles designed for relational data and directed graphs (Paired-k-degree).
+
+        - title: Information Loss Metrics
+          # image:
+          #   path: tags.png
+          #   alt: "A screenshot of the tags page"
+          description: >
+            Information loss metrics evaluate the quality of anonymized KGs.
+            <li>Attribute and Degree Information Loss Metric (ADM): combines information loss metrics used for relational data and graphs' anonymization.</li>
+            <li>Attribute Truthfulness and Degree Information Loss metric (ATDM): evaluates the truthfulness of association rules extracted from anonymized KGs. The truthfulness of a rule is measured by a classifier. I implemented the classifier in PyTorch by combining shallow-embeddings of association rules in the raw KGs.</li>
+
+        - title: Clusters-Based Knowledge Graph Anonymization
+          # image:
+          #   path: home.png
+          #   alt: "A screenshot of the blog page"
+          description: >
+            While all previous work use a fixed clustering algorithm to anonymize data, the clusters-based knowledge graph anonymization algorithm (CKGA) allows data providers to use any clustering algorithms to generate the anonymized KGs. To this end, CKGA must solve two challenges: (1) how to make all clustering algorithms work with information loss metrics? and (2) how to make anonymized KGs satisfy k-ad no matter what algorithms are used.<br><br>
+
+            I address (1) by modifying node2vec (PyTorch) to generate users' vectors such that the Euclidean distances between two vectors are similar to information loss of anonymizing their corresponding users. Since most clustering algorithms accept vectors in Euclidean space as their inputs, CKGA can execute them with the generated vectors.<br><br>
+
+            (2) is remedied by developing an algorithm to modify clusters generated by clustering algorithms to make them valid (i.e., having at least k users). Finally, I design a generalization algorithm to generalize users' attributes and relationships such that the attribute values and relationship out-/in-degrees of those in the same clusters are identical.
+
+- project :
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    # url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
+    # image:
+    #   path: "portfolio.png" # path: assets/project/
+    #   alt: "A screenshot of the portfolio page"
+    year: 2020
+    status:
+    date: 2020
+    title: Sequential Knowledge Graph Anonymization
+    skills:
+      - Python
+      - Algorithm Design
+      - Discrete Optimization
+      - Scikit-Learn
+    summary: A k-anonymity approach for sequentially publishing knowledge graphs.
+    description: >
+      This project allows data providers to sequentially publish multiple anonymized versions of their knowledge graphs (KGs) after updating their users' information. It allows data providers to freely modify their users' information by inserting/deleting/updating/re-inserting users.
+    contents:
+        - title: k^w-Attribute Degree Principle
+          # image:
+          #   path: portfolio.png
+          #   alt: "A screenshot of the portfolio page"
+          description: >
+            k^w-Attribute Degree (k^w-ad) prevents users from being re-identified with a confidence higher than 1/k by adversaries who monitor w continuous anonymized versions of a knowledge graph.
+
+        - title: Sequential Anonymization Algorithm
+          # image:
+          #   path: tags.png
+          #   alt: "A screenshot of the tags page"
+          description: >
+            The anonymization algorithm allows data providers to select the clustering algorithms that they want to use to anonymize their knowledge graphs (KGs). I design an efficient data structure to monitor users' anonymized attribute values and relationship degrees in w continuous anonymized versions.
+
+- project :
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    # url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
+    # image:
+    #   path: "portfolio.png" # path: assets/project/
+    #   alt: "A screenshot of the portfolio page"
+    year: 2021
+    status:
+    date: 2021
+    title: Personalized Knowledge Graph Anonymization
+    skills:
+      - Python
+      - Algorithm Design
+      - Discrete Optimization
+      - Scikit-Learn
+    summary: A k-anonymity approach allowing data owners to specify their anonymity levels.
+    description: >
+      This project allows data providers to publish static knowledge graphs (KGs) while allowing data owners to specify their own anonymity levels.
+    contents:
+        - title: Anonymization Distance
+          # image:
+          #   path: portfolio.png
+          #   alt: "A screenshot of the portfolio page"
+          description: >
+            Since each data owner has their own anonymity level, anonymizing those having high difference of anonymity levels results in high information loss. Therefore, I design the anonymization distance metric capturing both users' information loss and the anonymity levels' difference.
+
+        - title: Varying-Anonymity Levels Clustering Algorithm
+          # image:
+          #   path: tags.png
+          #   alt: "A screenshot of the tags page"
+          description: >
+            Since most state-of-the-art clustering algorithm, I design an efficient clustering algorithm that minimizing the anonymization distances between users in the same clusters and the clusters' sizes.
+
+        - title: Merge-Split Algorithm
+          # image:
+          #   path: home.png
+          #   alt: "A screenshot of the blog page"
+          description: >
+            This algorithm modifies clusters generated by other clustering algorithms to allow the anonymized knowledge graphs satisfying multiple anonymity levels no matter what algorithms selected by data providers.
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
     url:  # Full URL
     image: # path: assets/project/
-    date: 06/2019 &ndash; Developing
-    title: Dummy project
-    summary: This is a Dummy
-    description:  
+    year: 2022
+    status:
+    date: 2022
+    title: Preventing Attribute-Leakage in Sequential Publishing of Knowledge Graphs
+    skills:
+      - Python
+      - Algorithm Design
+      - Discrete Optimization
+      - Scikit-Learn
+    summary: Preventing attribute-leakage attack and identity-leakage while allowing data providers to freely modify their knowledge graphs.
+    description: >
+      This project protects data owners from attribute-leakage and identity-leakage while allowing data providers to freely modify their knowledge graphs (i.e., inserting/deleting/updating/re-inserting users). Also, the protection holds even though adversaries access to all anonymized versions of the KG.
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    url:  # Full URL
+    image: # path: assets/project/
+    year: 2022
+    status: Developing
+    date: 2022 &ndash; Developing
+    title: Blockchain-Based Anonymization
+    skills:
+      - Go
+      - Hyperledger Fabric
+      - Node.js
+      - Homomorphic Encryption
+    summary: A transparent platform for data owners, data providers, and data recipients to collect, publish anonymized knowledge graphs, and verify whether anonymized knowledge graphs satisfy k-anonymity.
+    description:
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    url:  # Full URL
+    image: # path: assets/project/
+    year: 2021
+    status: Developing
+    date: 2021 &ndash; Developing
+    title: "Promark: A Transparent Blockchain-based Marketing Platform"
+    skills:
+      - Go
+      - Hyperledger Fabric
+      - Node.js
+      - Homomorphic Commitment
+      - Multi-Party Computation
+      - Zero-Knowledge-Proof
+    summary: A transparent platform for publishers, marketers, and customers to distribute marketing information and evaluate the effectiveness of marketing campaigns.
+    description:
