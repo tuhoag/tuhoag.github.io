@@ -15,7 +15,7 @@ layout: page
             {% if presentation.slides contains '://' -%}
               [<a href="{{ presentation.slides }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
             {%- else -%}
-              [<a href="{{ presentation.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
+              [<a href="{{ presentation.slides | prepend: '/assets/pdf/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
             {%- endif %}
           {%- endif %}
           {%- if presentation.hub %}
