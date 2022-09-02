@@ -1,6 +1,6 @@
 image: assets/img/portfolio-avatar.jpg
 username: Tu Hoang
-description: I am a senior researcher in privacy and security. My main research projects include designing privacy-preserving technologies for publishing data (i.e., knowledge graphs, relational data, textual data) and decentralized systems (i.e., Hyperledger Fabric, a permissioned blockchain platform created by IBM). Moreover, I am a reviewer of high-quality journals and conferences (e.g., VLDB, TOPS).
+description: I am a senior researcher in designing privacy-preserving and security technologies. My main research projects introduce privacy-preserving technologies for publishing data (i.e., knowledge graphs, relational data, textual data) and decentralized systems (i.e., Hyperledger Fabric, a permissioned blockchain platform created by IBM). Moreover, I am a reviewer of high-quality journals and conferences (e.g., VLDB, TOPS).
 webpage: https://tuhoang.github.io
 experience: # Remove for hiding the experience section
   - start: 2020-12-01
