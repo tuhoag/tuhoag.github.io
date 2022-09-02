@@ -21,7 +21,7 @@ Netlify is also a great option for deploying the site. You can connect your repo
 
 
 ## GitHub Pages vs Netlify
-Even though there are many differences between GitHub Pages and Netlify, I think only four of them are important to deploying portfolio websites:
+Even though there are many differences between GitHub Pages and Netlify, I think only four of them are important in deploying portfolio websites:
 1. How easy do you want to configure the website to work with your own domain?
    **Netlify**. GitHub Pages requires more DNS settings and you have to wait more than Netlify.
 2. Does GitHub Pages's deployment time annoy you?
