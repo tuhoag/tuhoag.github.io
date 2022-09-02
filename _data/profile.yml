@@ -22,8 +22,20 @@ interests: # Remove for hiding the interests section
   - "Algorithm Design"
   - "Privacy-Preserving Machine Learning/Deep Learning"
 skills: # Remove for hiding the skills section
-  - skill: HTML5 & CSS
-    value: 85  # Percent value
+  # - skill: Anonymization
+  #   value: 100
+  # - skill: Cryptography
+  #   value: 50
+  - skill: Python
+    value: 100  # Percent value
+  - skill: Go
+    value: 14
+  - skill: Node.js
+    value: 30
+  - skill: Machine Learning (PyTorch, Tensorflow, Scikit-Learn)
+    value: 30
+  - skill: Hyperledger Fabric
+    value: 14
 social:
   email:  hatu87@gmail.com
   orcid: 0000-0002-1027-3905
@@ -41,5 +53,5 @@ social:
   youtube: UCMFgG8d7X9jh3A2NYeZOi3g
   facebook:
   instagram:
-# awards: # Remove for hiding the awards section
-#   - "This is an award I got"
+awards: # Remove for hiding the awards section
+  - "This is an award I got"
