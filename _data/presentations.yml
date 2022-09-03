@@ -30,4 +30,18 @@
     slides: Sequential_Anonymization_of_Knowledge_Graphs-ICDE-Tu_Hoang.pdf
     comment: This presentation introduces the sequential anonymization approach for protecting users from identity leakage when adversaries have access to w continuous anonymized versions of a knowledge graph.
 
+- presentation:
+    title: >
+        Time-Aware Anonymization of Knowledge Graphs
+    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
+    date: 06/2022
+    slides: Time-Aware_Anonymization_of_Knowledge_Graphs-Tu_Hoang.pdf
+    comment: This presentation introduces my k-anonymity technique protecting data owners from identity and attribute leakage even though adversaries have access to all published anonymized versions of a knowledge graph.
 
+- presentation:
+    title: >
+        Transparency in Proximity Advertising Campaigns
+    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
+    date: 06/2022
+    slides: Transparency_in_Proximity_Advertising_Campaigns-Tu_Hoang.pdf
+    comment: This presentation introduces my blockchain-based platform ensuring the transparency of marketing campaign effectiveness measurement and privacy of participants (marketers, publishers, and customers).
