@@ -3,6 +3,11 @@ baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
+subpages:
+  - Publications
+  - Presentations
+  - Curriculum Vitae
+
 publications: True
 presentations: True
 # blog: False

@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Publications
+  link: /publications
+- name: Presentations
+  link: /presentations
+- name: Teaching
+  link: /teaching
+- name: Theses
+  link: /theses
+- name: Curriculum Vitae
+  link: /assets/pdf/cv_tu_hoang.pdf
