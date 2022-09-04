@@ -1,0 +1,91 @@
+- course:
+    year: 2010-2017
+    title: Fundamental Database
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+      The course provides basic relational database concepts for bachelor's students. The concepts include Relational Algebra, SQL, and Relational Calculus. Students practice conducting SQL queries in SQL Server.
+
+    lecture:
+      - Introduction to Relational Databases
+      - Relational Algebra
+      - SQL
+      - Relational Calculus
+    skills:
+      - Microsoft SQL Server
+      - SQL
+
+- course:
+    year: 2016-2017
+    title: NoSQL
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+        The course provides a fundamental understanding of popular NoSQL databases (i.e., Redis, Cassandra, MongoDB, Neo4j) and their features: queries, access control, and sharding/replication. The laboratories guide students through simulating NoSQL databases in distributed environments using Docker and manipulating them with popular techniques (i.e., Node.js, Ruby on Rails).
+    lecture:
+      - Introduction to NoSQL
+      - Key-Value Datastores
+      - Document Datastores
+      - Column Datastores
+      - Graph Datastores
+    skills:
+      - Docker
+      - Redis
+      - MongoDB
+      - Cassandra
+      - Neo4j
+      - Access control
+      - Replication/Sharding
+
+- course:
+    year: 2014-2016
+    title: Distributed Applications
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+        The course provides basic concepts of micro-service applications and the applications' architectures. Students practice implementing the applications using Node.js, NoSQL, and Docker.
+    lecture:
+      - Introduction
+      - Key-Value Datastores
+      - Document Datastores
+      - Column Datastores
+      - Graph Datastores
+    skills:
+      - Docker
+      - Redis
+      - Postgres
+      - Node.js
+
+- course:
+    year: 2012-2016
+    title: Database Security
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+        The course provides basic concepts of security features in the Oracle database. The features include discrete authorization (DAC), role-based authorization (RBAC), the virtual private database (VPD), and label security (MAC). I provide guidelines to let students implement these features in security scenarios.
+    lecture:
+      - Introduction
+      -
+    skills:
+      - Oracle
+      - Access Control
+      - VPD
+      - DAC
+      - RBAC
+      - MAC
+
+- course:
+    year: 2017
+    title: Ruby on Rails
+    location: OPSWAT Company, Ho Chi Minh City, Vietnam
+    summary: >
+        The course provides fundamentals of Ruby on Rails (RoR) and tutorials on how to implement an essential E-Commerce website using RoR: databases' manipulation (i.e., Redis, Postgres), authentication/authorization, real-time features (i.e., Action Cable, Web Sockets), deployment (i.e., Heroku).
+    lecture:
+      - "Introduction: Installation Development Environment (Docker), Architecture"
+      - "Databases' Manipulation: Postgres, Redis"
+      - Authentication/Authorization
+      - Javascript, AJAX
+    skills:
+      - Docker
+      - Redis
+      - Postgres
+      - Ruby on Rails
+      - Javascript
+      - Access Control
+
