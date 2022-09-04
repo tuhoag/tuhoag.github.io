@@ -1,0 +1,40 @@
+#theses {
+    @extend %page-padding;
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 105px;
+        left:0%;
+        height: 95px;
+        background-color: $theme-dark;
+    }
+    h1.title{
+        color:#fff;
+        margin-bottom: 30px;
+    }
+    ol.theses-list{
+        list-style-type: none;
+        li {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            .title {
+                font-weight: bolder;
+                font-style: normal;
+            }
+            .location {
+            }
+            .date {
+                font-style: normal;
+                margin-left: 0.5rem;
+            }
+            .meta,
+            .meta span {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 0.75rem;
+                margin: 3px 0 10px;
+            }
+        }
+    }
+}

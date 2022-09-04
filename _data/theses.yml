@@ -1,0 +1,40 @@
+- thesis:
+    year: 2017
+    title: Scheduling Optimization in Factories
+    location: University of Science and DataLogic, Ho Chi Minh City, Vietnam
+    summary: >
+        I collaborated with Data Logic, a company producing card scanner devices, to supervise two Bachelor students. The thesis includes creating an algorithm for optimizing the usage schedule of resources (e.g., machines, employees).
+
+    skills:
+      - C#
+      - Optimization
+
+- thesis:
+    year: 2022
+    title: Rewarding System in Blockchain-Based Proximity Advertising Platforms
+    location: University of Insubria, Varese, Italy
+    summary: >
+        I supervised a Master student to extend ProMark, my blockchain-based proximity advertising platform. The student is required to design a reward system for ProMark to provide rewards to customers according to their contributions to proximity advertising campaigns. The design relies on homomorphic commitments (Pedersen Commitment), zero-knowledge-proof, multi-party computation. The implementation has been implemented in Hyperledger Fabric.
+
+    skills:
+      - Hyperledger Fabric
+      - Go
+      - Node.js
+      - Zero-Knowledge-Proof
+      - Homomorphic Commitment
+      - Cryptography
+      - Multi-Party Computation
+
+- thesis:
+    year: 2022
+    title: Blockchain-Based Anonymization
+    location: University of Insubria, Varese, Italy
+    summary: >
+        I supervised a Master student to design a blockchain platform to ensure the transaprency of data owners, data providers, and data recipients. The system allows data owners to provide their anonymity levels, the providers to share anonymized knowledge graphs to data recipients, and the data owners to verify whether the anonymized knowledge graphs satisfying their provided anonymity levels. The design relies on Hyperledger Fabric, homomorphic encryption (Elgama Scheme), zero-knowledge-proof.
+    skills:
+      - Hyperledger Fabric
+      - Go
+      - Node.js
+      - Zero-Knowledge-Proof
+      - Homomorphic Encryption
+      - Cryptography

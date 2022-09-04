@@ -1,3 +1,25 @@
 ---
 layout: page
 ---
+<div id="theses">
+    <section class="bg"></section>
+
+    <h1 class="title">{{ page.title }}</h1>
+    <ol class="theses-list">
+        {% for _ in site.data.theses %}
+        {% assign thesis = _.thesis %}
+        <li>
+            <em class="title">{{ thesis.title }}</em> at <em class="event">{{ thesis.location }}</em> <em
+                class="date">({{ thesis.year }})</em>
+            <div class="meta">
+                {% if thesis.skills %}
+                    {% for skill in thesis.skills %}
+                    <span>#{{ skill }}</span>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <p class="comment">{{ thesis.summary | markdownify }}</p>
+        </li>
+        {% endfor %}
+    </ol>
+</div>
