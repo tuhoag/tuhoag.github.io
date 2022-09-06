@@ -15,6 +15,18 @@
       - SQL
 
 - course:
+    year: 2010-2017
+    title: Fundamental Programming
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+      I gave the tutorials on the basic programming concepts in C/C++.
+
+    lecture:
+
+    skills:
+      - C/C++
+
+- course:
     year: 2016-2017
     title: NoSQL
     location: University of Science, Ho Chi Minh City, Vietnam

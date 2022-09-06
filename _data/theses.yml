@@ -10,11 +10,27 @@
       - Optimization
 
 - thesis:
+    year: 2020
+    title: Blockchain-based Platform for Proximity Advertising
+    location: University of Insubria, Varese, Italy
+    summary: >
+        I supervised a Ph.D. student in developing a platform for proximity advertising. We analyzed many blockchain platforms (Ethereum and Hyperledger Fabric) and selected Hyperledger Fabric since it is more flexible for customization. Then, we design techniques to protect the security and privacy of the platform. The design relies on homomorphic commitments (Pedersen Commitment), zero-knowledge-proof, multi-party computation.
+
+    skills:
+      - Hyperledger Fabric
+      - Go
+      - Node.js
+      - Zero-Knowledge-Proof
+      - Homomorphic Commitment
+      - Cryptography
+      - Multi-Party Computation
+
+- thesis:
     year: 2022
     title: Rewarding System in Blockchain-Based Proximity Advertising Platforms
     location: University of Insubria, Varese, Italy
     summary: >
-        I supervised a Master student to extend ProMark, my blockchain-based proximity advertising platform. The student is required to design a reward system for ProMark to provide rewards to customers according to their contributions to proximity advertising campaigns. The design relies on homomorphic commitments (Pedersen Commitment), zero-knowledge-proof, multi-party computation. The implementation has been implemented in Hyperledger Fabric.
+        I supervised a Master's student to extend ProMark, my blockchain-based proximity advertising platform. The student is required to design a reward system for ProMark to provide rewards to customers according to their contributions to proximity advertising campaigns. The design relies on homomorphic commitments (Pedersen Commitment), zero-knowledge-proof, multi-party computation. The implementation has been implemented in Hyperledger Fabric.
 
     skills:
       - Hyperledger Fabric
@@ -30,7 +46,7 @@
     title: Blockchain-Based Anonymization
     location: University of Insubria, Varese, Italy
     summary: >
-        I supervised a Master student to design a blockchain platform to ensure the transaprency of data owners, data providers, and data recipients. The system allows data owners to provide their anonymity levels, the providers to share anonymized knowledge graphs to data recipients, and the data owners to verify whether the anonymized knowledge graphs satisfying their provided anonymity levels. The design relies on Hyperledger Fabric, homomorphic encryption (Elgama Scheme), zero-knowledge-proof.
+        I supervised a Master's student in designing a blockchain platform to ensure the transparency of data owners, data providers, and data recipients. The system allows data owners to provide their anonymity levels, the providers to share anonymized knowledge graphs to data recipients, and the data owners to verify whether the anonymized knowledge graphs satisfying their provided anonymity levels. The design relies on Hyperledger Fabric, homomorphic encryption (Elgama Scheme), and zero-knowledge-proof.
     skills:
       - Hyperledger Fabric
       - Go
@@ -38,3 +54,14 @@
       - Zero-Knowledge-Proof
       - Homomorphic Encryption
       - Cryptography
+
+- thesis:
+    year: 2022
+    title: Anonymization Platform for Knowledge Graphs
+    location: University of Insubria, Varese, Italy
+    summary: >
+        I supervised a Bachelor's student in designing a website that allows data owners to specify anonymity levels, the data providers to collect/anonymize knowledge graphs (KGs), and the data recipients to receive the anonymized KGs.
+    skills:
+      - Python
+      - Java
+      - JSP

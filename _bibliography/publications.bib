@@ -108,3 +108,15 @@ References
   title    = {BeadNet: a network for automated spherical marker detection in radiographs for geometry calibration},
   abstract = {Spherical markers are commonly used by phantombased calibration methods for X-ray CT systems. Defining the position of the marker centers is therefore crucial to estimate the geometry parameters accurately. Although marker bearing structures are often built from materials of low X-ray attenuation, they still overlap with the marker in projection images. This complicates accurate determination of the marker centers. In this work, we explore the technique of Deep Learning to extract the marker center coordinates from the calibration projections. By training a Deep Learning network for each marker center coordinate, 2D positions of the marker are derived. With simulated as well as real experiments, it is shown that the trained Deep Learning networks can be used to accurately estimate the marker positions, and hence also the geometry of the X-ray CT system.}
 }
+
+@inproceedings{tu:tops,
+  author    = {Hoang, Anh-Tu and Carminati, Barbara and Ferrari, Elena},
+  booktitle = {the ACM Transactions on Privacy and Security (TOPS)},
+  title     = {Time-Aware Anonymization of Knowledge Graphs (Accepted)},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {},
+
+  abstract  = {Knowledge graphs (KGs) play an essential role in data sharing because they can model both users' attributes and their relationships. KGs can tailor many data analyses, such as classification where a sensitive attribute is selected and the analyst analyzes the associations between users and the sensitive attribute's values (aka sensitive values).     Data providers anonymize their KGs and share the anonymized versions to protect users' privacy. Unfortunately, an adversary can exploit these attributes and relationships to infer sensitive information by monitoring either one or many snapshots of a KG. To cope with this issue, in this paper, we introduce $(k,l)$-Sequential Attribute Degree ($(k,l)$-sad), an extension of the $k^w$-tad principle\cite{Tu:kwtad}, to ensure that sensitive values of re-identified users are diverse enough to prevent them from being inferred with a confidence higher than $\frac{1}{l}$ even though adversaries monitor all published KGs. In addition, we develop the Time-Aware Knowledge Graph Anonymization Algorithm to anonymize  KGs such that all published anonymized versions of a KG satisfy the $(k,l)$-sad principle, by, at the same time, preserving the utility of the anonymized data. We conduct experiments on four real-life datasets to show the effectiveness of our proposal and compare it with $k^w$-tad.}
+}
