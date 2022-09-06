@@ -19,12 +19,27 @@
     title: Fundamental Programming
     location: University of Science, Ho Chi Minh City, Vietnam
     summary: >
-      I gave the tutorials on the basic programming concepts in C/C++.
+      I was a teaching assistant who gave the tutorials on the basic programming concepts in C/C++.
 
     lecture:
 
     skills:
       - C/C++
+
+- course:
+    year: 2010-2017
+    title: Web Programming with JSP and .NET
+    location: University of Science, Ho Chi Minh City, Vietnam
+    summary: >
+      I was a teaching assistant who gave the tutorials on how to create websites with JSP and .NET.
+
+    lecture:
+
+    skills:
+      - Java
+      - C#
+      - JSP
+      - .NET
 
 - course:
     year: 2016-2017
