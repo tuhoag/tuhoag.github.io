@@ -45,3 +45,11 @@
     date: 06/2022
     slides: Transparency_in_Proximity_Advertising_Campaigns-Tu_Hoang.pdf
     comment: This presentation introduces my blockchain-based platform ensuring the transparency of marketing campaign effectiveness measurement and privacy of participants (marketers, publishers, and customers).
+
+- presentation:
+    title: >
+        Private Federated Learning Knowledge Graph Representation Learning
+    event: Lab Meeting, University of Insubria, Varese, Italy
+    date: 10/2022
+    slides: Private Federated Knowledge Graph Representation Learning-Tu Hoang.pdf
+    comment: This presentation introduces my investigation on the privacy protection techniques for learning knowledge graph representation under federated learning settings by using differential privacy.
