@@ -1,34 +1,10 @@
 - presentation:
     title: >
-        Cluster-based Anonymization of Knowledge Graphs
-    event: the 18th International Conference on Applied Cryptography and Network Security, Rome, Italy (Virtual)
-    date: 10/2020
-    slides: Cluster-based_Anonymization_of_Knowledge_Graphs-ACNS-TuHoang.pdf
-    comment: This presentation introduces the first anonymization approach for knowledge graphs.
-
-- presentation:
-    title: Adversarial Machine Learning
+        Private Federated Learning Knowledge Graph Representation Learning
     event: Lab Meeting, University of Insubria, Varese, Italy
-    date: 11/2020
-    slides: Adversarial_Machine_Learning-Tu_Hoang.pdf
-    comment: This presentation introduces some adversarial machine learning attacks.
-
-- presentation:
-    title: >
-        Differential Privacy: Foundation, Applications, and Challenges
-    event: Lab Meeting, University of Insubria, Varese, Italy
-    date: 09/2021
-    slides: Differential_Privacy-Tu_Hoang.pdf
-    comment: This presentation covers basic concepts of differential privacy.
-    # hub: example-hub # potential hub page to link to
-
-- presentation:
-    title: >
-        Privacy-Preserving Sequential Publishing of Knowledge Graphs
-    event: the 37th IEEE International Conference on Data Engineering, Chania, Greece (Virtual)
-    date: 04/2021
-    slides: Sequential_Anonymization_of_Knowledge_Graphs-ICDE-Tu_Hoang.pdf
-    comment: This presentation introduces the sequential anonymization approach for protecting users from identity leakage when adversaries have access to w continuous anonymized versions of a knowledge graph.
+    date: 10/2022
+    slides: Private Federated Knowledge Graph Representation Learning-Tu Hoang.pdf
+    comment: This presentation introduces my investigation on the privacy protection techniques for learning knowledge graph representation under federated learning settings by using differential privacy.
 
 - presentation:
     title: >
@@ -48,8 +24,39 @@
 
 - presentation:
     title: >
-        Private Federated Learning Knowledge Graph Representation Learning
+        Differential Privacy: Foundation, Applications, and Challenges
     event: Lab Meeting, University of Insubria, Varese, Italy
-    date: 10/2022
-    slides: Private Federated Knowledge Graph Representation Learning-Tu Hoang.pdf
-    comment: This presentation introduces my investigation on the privacy protection techniques for learning knowledge graph representation under federated learning settings by using differential privacy.
+    date: 09/2021
+    slides: Differential_Privacy-Tu_Hoang.pdf
+    comment: This presentation covers basic concepts of differential privacy.
+    # hub: example-hub # potential hub page to link to
+
+- presentation:
+    title: >
+        Privacy-Preserving Sequential Publishing of Knowledge Graphs
+    event: the 37th IEEE International Conference on Data Engineering, Chania, Greece (Virtual)
+    date: 04/2021
+    slides: Sequential_Anonymization_of_Knowledge_Graphs-ICDE-Tu_Hoang.pdf
+    comment: This presentation introduces the sequential anonymization approach for protecting users from identity leakage when adversaries have access to w continuous anonymized versions of a knowledge graph.
+
+- presentation:
+    title: Adversarial Machine Learning
+    event: Lab Meeting, University of Insubria, Varese, Italy
+    date: 11/2020
+    slides: Adversarial_Machine_Learning-Tu_Hoang.pdf
+    comment: This presentation introduces some adversarial machine learning attacks.
+
+- presentation:
+    title: >
+        Cluster-based Anonymization of Knowledge Graphs
+    event: the 18th International Conference on Applied Cryptography and Network Security, Rome, Italy (Virtual)
+    date: 10/2020
+    slides: Cluster-based_Anonymization_of_Knowledge_Graphs-ACNS-TuHoang.pdf
+    comment: This presentation introduces the first anonymization approach for knowledge graphs.
+
+
+
+
+
+
+
