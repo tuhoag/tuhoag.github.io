@@ -1,17 +1,26 @@
 - presentation:
     title: >
-        Cluster-based Anonymization of Knowledge Graphs
-    event: the 18th International Conference on Applied Cryptography and Network Security, Rome, Italy (Virtual)
-    date: 10/2020
-    slides: Cluster-based_Anonymization_of_Knowledge_Graphs-ACNS-TuHoang.pdf
-    comment: This presentation introduces the first anonymization approach for knowledge graphs.
+        Private Federated Learning Knowledge Graph Representation Learning
+    event: Lab Meeting, University of Insubria, Varese, Italy
+    date: 10/2022
+    slides: Private Federated Knowledge Graph Representation Learning-Tu Hoang.pdf
+    comment: This presentation introduces my investigation on the privacy protection techniques for learning knowledge graph representation under federated learning settings by using differential privacy.
 
 - presentation:
-    title: Adversarial Machine Learning
-    event: Lab Meeting, University of Insubria, Varese, Italy
-    date: 11/2020
-    slides: Adversarial_Machine_Learning-Tu_Hoang.pdf
-    comment: This presentation introduces some adversarial machine learning attacks.
+    title: >
+        Time-Aware Anonymization of Knowledge Graphs
+    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
+    date: 06/2022
+    slides: Time-Aware_Anonymization_of_Knowledge_Graphs-Tu_Hoang.pdf
+    comment: This presentation introduces my k-anonymity technique protecting data owners from identity and attribute leakage even though adversaries have access to all published anonymized versions of a knowledge graph.
+
+- presentation:
+    title: >
+        Transparency in Proximity Advertising Campaigns
+    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
+    date: 06/2022
+    slides: Transparency_in_Proximity_Advertising_Campaigns-Tu_Hoang.pdf
+    comment: This presentation introduces my blockchain-based platform ensuring the transparency of marketing campaign effectiveness measurement and privacy of participants (marketers, publishers, and customers).
 
 - presentation:
     title: >
@@ -31,17 +40,23 @@
     comment: This presentation introduces the sequential anonymization approach for protecting users from identity leakage when adversaries have access to w continuous anonymized versions of a knowledge graph.
 
 - presentation:
-    title: >
-        Time-Aware Anonymization of Knowledge Graphs
-    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
-    date: 06/2022
-    slides: Time-Aware_Anonymization_of_Knowledge_Graphs-Tu_Hoang.pdf
-    comment: This presentation introduces my k-anonymity technique protecting data owners from identity and attribute leakage even though adversaries have access to all published anonymized versions of a knowledge graph.
+    title: Adversarial Machine Learning
+    event: Lab Meeting, University of Insubria, Varese, Italy
+    date: 11/2020
+    slides: Adversarial_Machine_Learning-Tu_Hoang.pdf
+    comment: This presentation introduces some adversarial machine learning attacks.
 
 - presentation:
     title: >
-        Transparency in Proximity Advertising Campaigns
-    event: the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany
-    date: 06/2022
-    slides: Transparency_in_Proximity_Advertising_Campaigns-Tu_Hoang.pdf
-    comment: This presentation introduces my blockchain-based platform ensuring the transparency of marketing campaign effectiveness measurement and privacy of participants (marketers, publishers, and customers).
+        Cluster-based Anonymization of Knowledge Graphs
+    event: the 18th International Conference on Applied Cryptography and Network Security, Rome, Italy (Virtual)
+    date: 10/2020
+    slides: Cluster-based_Anonymization_of_Knowledge_Graphs-ACNS-TuHoang.pdf
+    comment: This presentation introduces the first anonymization approach for knowledge graphs.
+
+
+
+
+
+
+
