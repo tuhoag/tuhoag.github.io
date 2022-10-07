@@ -1,8 +1,14 @@
 {% if site.data.profile.interests %}
   <p class="title">{{ site.theme_settings.interests_title }}</p>
   <ul class="interests-list">
-    {% for interest in site.data.profile.interests %}
-    <li class="interest">{{ interest }}</li>
+    {% for item in site.data.profile.interests %}
+    <li class="interest">
+        {{ item.interest }}:
+        {% assign skills = item.values | split: "," %}
+        {% for h in skills %}
+            <span href="#" class="badge badge-pill badge-success">{{ h }}</span>
+        {% endfor %}
+    </li>
     {% endfor %}
   </ul>
 {% endif %}

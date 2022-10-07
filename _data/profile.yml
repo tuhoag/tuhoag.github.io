@@ -1,6 +1,7 @@
 image: assets/img/portfolio-avatar.jpg
 username: Tu Hoang
-description: I am a senior researcher in designing privacy-preserving and security technologies. My main research projects introduce privacy-preserving technologies for publishing data (i.e., knowledge graphs, relational data, textual data) and decentralized systems (i.e., Hyperledger Fabric, a permissioned blockchain platform created by IBM). Moreover, I am a reviewer of high-quality journals and conferences (e.g., VLDB, TOPS).
+description: I am a senior researcher in privacy, security, machine learning, and decentralized systems. I have presented privacy-preserving technologies for machine learning/deep learning on various data types (i.e., knowledge graphs, relational data, textual data) and decentralized systems (i.e., Hyperledger Fabric). The techniques require me to have strong knowledge of state-of-the-art machine learning/deep learning models to analyze their vulnerabilities and protect them. Moreover, I am a reviewer of high-quality journals and conferences (e.g., VLDB, TOPS).
+
 webpage: https://tuhoang.github.io
 experience: # Remove for hiding the experience section
   - start: 2020-12-01
@@ -16,11 +17,16 @@ experience: # Remove for hiding the experience section
     end: 2017-10-01
     experience: University of Science, Vietnam National University (Ho Chi Minh City, Vietnam), Lecturer & Teaching Assistant
 interests: # Remove for hiding the interests section
-  - "Privacy: Differential Privacy, k-Anonymity"
-  - "Machine Learning/Deep Learning: Federated Learning, Knowledge Graph Embedding, Node2Vec, Image Classification"
-  - "Decentralized Systems: Blockchain, NoSQL"
-  - "Cryptography: Multi-party Computation, Homomorphic Encryption/Commitment, zero-knowledge-proof"
-  - "Algorithm Design"
+  - interest: Privacy
+    values: Differential Privacy, k-Anonymity
+  - interest: Machine Learning
+    values: Federated Learning, Knowledge Graph Embedding, Node2Vec, Image Classification
+  - interest: Decentralized Systems
+    values: Blockchain, NoSQL
+  - interest: Cryptography
+    values: Multi-party Computation, Homomorphic Encryption, Pedersen Commitment, Zero-Knowledge-Proof
+  - interest: Algorithm Design
+    values: Graph Theory, Discrete Optimization
 
 skills: # Remove for hiding the skills section
   # - skill: Anonymization
