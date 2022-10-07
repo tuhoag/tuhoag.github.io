@@ -16,26 +16,25 @@ experience: # Remove for hiding the experience section
     end: 2017-10-01
     experience: University of Science, Vietnam National University (Ho Chi Minh City, Vietnam), Lecturer & Teaching Assistant
 interests: # Remove for hiding the interests section
-  - "Anonymization: k-anonymity, differential privacy"
-  - "Decentralized Systems: blockchain, NoSQL"
-  - "Cryptography: multi-party computation, homomorphic encryption/commitment, zero-knowledge-proof"
+  - "Privacy: Differential Privacy, k-Anonymity"
+  - "Machine Learning/Deep Learning: Federated Learning, Knowledge Graph Embedding, Node2Vec, Image Classification"
+  - "Decentralized Systems: Blockchain, NoSQL"
+  - "Cryptography: Multi-party Computation, Homomorphic Encryption/Commitment, zero-knowledge-proof"
   - "Algorithm Design"
-  - "Privacy-Preserving Machine Learning/Deep Learning"
+
 skills: # Remove for hiding the skills section
   # - skill: Anonymization
   #   value: 100
   # - skill: Cryptography
   #   value: 50
-  - skill: Python
-    value: 100  # Percent value
-  - skill: Go
-    value: 14
-  - skill: Node.js
-    value: 30
-  - skill: Machine Learning (PyTorch, Tensorflow, Scikit-Learn,...)
-    value: 30
-  - skill: Hyperledger Fabric
-    value: 14
+  - skill: Programming
+    values: Python, Go, Node.js, Solidity, Bash, Scala, Ruby(Rails), Swift, C#
+  - skill: Machine Learning
+    values: PyTorch, Tensorflow, MXNet, Scikit-Learn, Numpy, Pandas, Matplotlib
+  - skill: Blockchain
+    values: Hyperledger Fabric, Ethereum
+  - skill: Tools
+    values: Docker, Git, Linux, Microsoft Azure
 social:
   email:  contact@tuhoang.me
   orcid: 0000-0002-1027-3905

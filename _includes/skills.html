@@ -1,14 +1,21 @@
 {% if site.data.profile.skills %}
   <p class="title">{{ site.theme_settings.skills_title }}</p>
-  <ul class="skill-list">
+  <ul class="interests-list">
     {% for _ in site.data.profile.skills %}
-    <li class="skill">
-      <p class="name">{{ _.skill }}</p>
-      <div class="progress">
+    <li class="interest">
+        <!-- <p class="name"> -->
+        {{ _.skill }}:
+        <!-- </p> -->
+        {% assign skills = _.values | split: "," %}
+        {% for h in skills %}
+            <span href="#" class="badge badge-pill badge-primary">{{ h }}</span>
+        {% endfor %}
+
+      <!-- <div class="progress">
         <div class="progress-bar" style="width: {{ _.value }}%">
           <div class="progress-value">{{ _.value }}%</div>
         </div>
-      </div>
+      </div> -->
     </li>
     {% endfor %}
   </ul>
