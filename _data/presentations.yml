@@ -1,5 +1,13 @@
 - presentation:
     title: >
+        Introduction to Privacy-preserving Techniques for AI
+    event: Online Summer Talk, University of Science, Ho Chi Minh City, Vietnam
+    date: 05/2023
+    slides: Introduction to Privacy-preserving Techniques for AI.pdf
+    comment: "This presentation introduces the overview of state-of-the-art privacy-preserving techniques for AI applications: k-Anonymity, Differential Privacy, Homomorphic Encryption, and Federated Learning."
+
+- presentation:
+    title: >
         Private Federated Learning Knowledge Graph Representation Learning
     event: Lab Meeting, University of Insubria, Varese, Italy
     date: 10/2022

@@ -3,6 +3,26 @@
 References
 ==========
 
+@inproceedings{Tu:formica,
+  author       = {Anh{-}Tu Hoang and
+                  Ahmed Lekssays and
+                  Barbara Carminati and
+                  Elena Ferrari},
+  editor       = {George Fletcher and
+                  Verena Kantere},
+  title        = {Privacy-preserving Decentralized Learning of Knowledge Graph Embeddings},
+  booktitle    = {Proceedings of the Workshops of the {EDBT/ICDT} 2023 Joint Conference,
+                  Ioannina, Greece, March, 28, 2023},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {3379},
+  publisher    = {CEUR-WS.org},
+  year         = {2023},
+  url          = {https://ceur-ws.org/Vol-3379/DATUM\_2023\_11.pdf},
+  abstract={
+    Knowledge Graphs (KGs)  enhance the performance of machine learning applications, such as recommendation systems and drug discovery. This is achieved through vector representations of KGs semantics, called Knowledge Graph Embeddings (KGEs). However, obtaining adequate data to train high-quality KGEs can be challenging for individual service providers. FedE and FedR address this challenge by enabling federated learning of KGEs without sharing local KGs, but they are limited by their reliance on trusted servers and lack of protection against inference attacks.   Recently, FKGE has been proposed to  enable collaboration between providers in the training of KGEs, exploiting differential privacy.  Nevertheless,  updating KGEs from all providers is time-consuming, and it does not protect against poisoning and backdoor attacks. Following this research direction, this paper focuses on  the security and privacy requirements for decentralized learning of KGEs, presents a reference architecture to support  these requirements, and discusses its security and privacy limitations.
+  },
+}
+
 @inproceedings{Tu:BUG,
   author    = {Hoang, Anh-Tu and Tran, Minh-Triet and Duong, Anh-Duc and Echizen, Isao},
   booktitle = {2012 Eighth International Conference on Computational Intelligence and Security},
@@ -12,7 +32,7 @@ References
   number    = {},
   pages     = {641-645},
   doi       = {10.1109/CIS.2012.148},
-  abstract  = {Sharing information is one of the most important parts of social activities. However, sharing information can leak users' information. Removing all direct identifiers is not enough. Sweeney proposed an approach that applying k-anonymity to protect users' identities from linking attack. Sweeney`s algorithm finds out the optimal anonymized dataset through minimal distortion metric. Other authors proposed other optimal algorithms but their proposals are still impractical due to their high computational cost. Another approach is to release the minimal anonymized dataset by applying some heuristics. Wang and Fung proposed Bottom-up Generalization and Top-down Specialization (TDS) to publish a minimal anonymized dataset with information loss metric, whose performance is more efficient. However, these algorithms still have some limitations. In this paper, we propose an algorithm to publish anonymized datasets through bottom-up generalization approach and information loss data metric. Our algorithm can save time by storing statistical information for later usage. The experimental results is performanced on Adult dataset, which is used in all former algorithms. Experimental results show that our algorithm can process 949,662 records dataset in 42.219s. Classification error on anonymized data, which is created by our algorithm, is lower than Wang's algorithm 3.8%.}
+  abstract  = {Sharing information is one of the most important parts of social activities. However, sharing information can leak users' information. Removing all direct identifiers is not enough. Sweeney proposed an approach that applying k-anonymity to protect users' identities from linking attack. Sweeney`s algorithm finds out the optimal anonymized dataset through minimal distortion metric. Other authors proposed other optimal algorithms but their proposals are still impractical due to their high computational cost. Another approach is to release the minimal anonymized dataset by applying some heuristics. Wang and Fung proposed Bottom-up Generalization and Top-down Specialization (TDS) to publish a minimal anonymized dataset with information loss metric, whose performance is more efficient. However, these algorithms still have some limitations. In this paper, we propose an algorithm to publish anonymized datasets through bottom-up generalization approach and information loss data metric. Our algorithm can save time by storing statistical information for later usage. The experimental results is performanced on Adult dataset, which is used in all former algorithms. Experimental results show that our algorithm can process 949,662 records dataset in 42.219s. Classification error on anonymized data, which is created by our algorithm, is lower than Wang's algorithm 3.8\%.}
 }
 
 @inproceedings{Tu:watermark-bug,
