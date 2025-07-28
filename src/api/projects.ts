@@ -4,7 +4,7 @@ const projects = [
     name: 'Distributed / Federated Learning',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '',
+    imageUrl: '/src/assets/bdl.svg',
     highlight: true,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   },
@@ -13,7 +13,7 @@ const projects = [
     name: 'Self-Sovereign Identity',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '',
+    imageUrl: '/src/assets/ssi.svg',
     highlight: true,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   },
@@ -22,7 +22,7 @@ const projects = [
     name: 'Blockchain Interoperability',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '',
+    imageUrl: '/src/assets/zkSSI-cross-chain.svg',
     highlight: true,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   },

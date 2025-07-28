@@ -36,7 +36,8 @@ function DashboardPaperItem({ publication }: DashboardPaperItemInterface) {
 }
 
 function DashboardPapers() {
-  const publications = fetchHighlightPublications();
+  let publications = fetchHighlightPublications();
+  publications.sort((a, b) => b.year - a.year);
 
   return (
     <DashboardSection title="Highlight Publications">

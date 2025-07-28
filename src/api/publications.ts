@@ -60,7 +60,7 @@ const publications = [
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
     venue: 'IEEE Transactions on Dependable and Secure Computing',
     year: 2025,
-    highlight: false,
+    highlight: true,
   },
   {
     id: 'per-anonykg',

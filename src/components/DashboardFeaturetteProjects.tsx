@@ -38,7 +38,8 @@ function DashboardProjectItem({ project, index }: DashboardProjectItemProps) {
 }
 
 function DashboardFeaturetteProjects() {
-  const projects = fetchHighlightProjects();
+  let projects = fetchHighlightProjects();
+  projects.sort((a, b) => b.startYear - a.startYear);
 
   return (
     <DashboardSection title="Highlight Projects">
