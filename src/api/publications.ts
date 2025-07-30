@@ -27,16 +27,19 @@ const authors = [
   },
 ];
 
+
 const publications = [
   {
     id: 'bdl',
     project: 'dl',
     title: 'Privacy-preserving Decentralized Learning of Knowledge Graph Embeddings',
     authors: ['Anh-Tu Hoang', 'Ahmed Lekssays', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'Proceedings of the Workshops of the EDBT/ICDT Joint Conference',
+    venue: {
+      title: 'Proceedings of the Workshops of the EDBT/ICDT Joint Conference',
+      type: 'Conference Paper',
+    },
     year: 2023,
     highlight: true,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -55,10 +58,12 @@ const publications = [
     project: 'dl',
     title: 'Blockchain-based Federated Learning Utilizing Zero-Knowledge Proofs for Verifiable Training and Aggregation',
     authors: ['Elmira Ebrahimi', 'Michael Sober', 'Anh-Tu Hoang', 'Can Umut Ileri', 'William Sanders', 'Stefan Schulte'],
-    venue: 'IEEE International Conference on Blockchain',
+    venue: {
+      title: 'IEEE International Conference on Blockchain',
+      type: 'Conference Paper',
+    },
     year: 2024,
     highlight: true,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -77,10 +82,12 @@ const publications = [
     project: 'ssi',
     title: 'zkSSI: A Zero-Knowledge-Based Self-Sovereign Identity Framework',
     authors: ['Anh-Tu Hoang', 'Can Umut Ileri', 'William Sanders', 'Stefan Schulte'],
-    venue: 'IEEE International Conference on Blockchain',
+    venue: {
+      title: 'IEEE International Conference on Blockchain',
+      type: 'Conference Paper',
+    },
     year: 2024,
     highlight: true,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -99,10 +106,13 @@ const publications = [
     project: 'promark',
     title: 'ProMark: Ensuring Transparency and Privacy-Awareness in Proximity Marketing Advertising Campaigns',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'IEEE Transactions on Dependable and Secure Computing',
+    venue: {
+      title: 'IEEE Transactions on Dependable and Secure Computing',
+      rank: 'Q1 (Impact Factor: 7.5)',
+      type: 'Journal Article',
+    },
     year: 2025,
     highlight: true,
-    type: 'Journal Article',
     links: [
       {
         name: 'Link',
@@ -121,10 +131,13 @@ const publications = [
     project: 'anony',
     title: 'Protecting Privacy in Knowledge Graphs With Personalized Anonymization',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'IEEE Transactions on Dependable and Secure Computing',
+    venue: {
+      title: 'IEEE Transactions on Dependable and Secure Computing',
+      rank: 'Q1 (Impact Factor: 7.5)',
+      type: 'Journal Article',
+    },
     year: 2024,
     highlight: true,
-    type: 'Journal Article',
     links: [
       {
         name: 'Link',
@@ -143,10 +156,13 @@ const publications = [
     project: 'anony',
     title: 'Time-aware Anonymization of Knowledge Graphs',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'ACM Transactions on Privacy and Security',
+    venue: {
+      title: 'ACM Transactions on Privacy and Security',
+      rank: 'Q1 (Impact Factor: 3.0)',
+      type: 'Journal Article',
+    },
     year: 2023,
     highlight: true,
-    type: 'Journal Article',
     links: [
       {
         name: 'Link',
@@ -165,10 +181,13 @@ const publications = [
     project: 'anony',
     title: 'Privacy-Preserving Sequential Publishing of Knowledge Graphs',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'IEEE International Conference on Data Engineering',
+    venue: {
+      title: 'IEEE International Conference on Data Engineering',
+      rank: 'A* (Acceptance Rate: 15%)',
+      type: 'Conference Paper',
+    },
     year: 2021,
     highlight: true,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -197,10 +216,13 @@ const publications = [
     project: 'anony',
     title: 'Cluster-Based Anonymization of Knowledge Graphs',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'Applied Cryptography and Network Security',
+    venue: {
+      title: 'Applied Cryptography and Network Security',
+      rank: 'B (Acceptance Rate: 20%)',
+      type: 'Conference Paper',
+    },
     year: 2020,
     highlight: true,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -219,10 +241,12 @@ const publications = [
     project: 'anony',
     title: 'Cluster-Based Anonymization of Directed Graphs',
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
-    venue: 'IEEE International Conference on Collaboration and Internet Computing',
+    venue: {
+      title: 'IEEE International Conference on Collaboration and Internet Computing',
+      type: 'Conference Paper',
+    },
     year: 2019,
     highlight: false,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -236,10 +260,13 @@ const publications = [
     project: 'anony',
     title: 'Anonymizing Temporal Phrases in Natural Language Text to be Posted on Social Networking Services',
     authors: ['Hoang-Quoc Nguyen-Son', 'Anh-Tu Hoang', 'Minh-Triet Tran', 'Hiroshi Yoshiura', 'Noboru Sonehara', 'Isao Echizen'],
-    venue: 'Digital-Forensics and Watermarking',
+    venue: {
+      title: 'Digital-Forensics and Watermarking',
+      rank: 'C',
+      type: 'Conference Paper',
+    },
     year: 2014,
     highlight: false,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -253,10 +280,13 @@ const publications = [
     project: 'anony',
     title: 'Detecting Traitors in Re-publishing Updated Datasets',
     authors: ['Anh-Tu Hoang', 'Hoang-Quoc Nguyen-Son', 'Minh-Triet Tran', 'Isao Echizen'],
-    venue: 'Digital-Forensics and Watermarking',
+    venue: {
+      title: 'Digital-Forensics and Watermarking',
+      rank: 'C',
+      type: 'Conference Paper',
+    },
     year: 2014,
     highlight: false,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -270,10 +300,13 @@ const publications = [
     project: 'anony',
     title: 'An Indexed Bottom-up Approach for Publishing Anonymized Data',
     authors: ['Anh-Tu Hoang', 'Minh-Triet Tran', 'Anh-Duc Duong', 'Isao Echizen'],
-    venue: 'IEEE International Conference on Computational Intelligence and Security',
+    venue: {
+      title: 'IEEE International Conference on Computational Intelligence and Security',
+      rank: 'C',
+      type: 'Conference Paper',
+    },
     year: 2012,
     highlight: false,
-    type: 'Conference Paper',
     links: [
       {
         name: 'Link',
@@ -292,6 +325,6 @@ export function fetchAuthors() {
   return authors;
 }
 
-export function fetchPublicationsByType(type: 'Conference Paper' | 'Journal Article'): Publication[] {
-  return publications.filter(publication => publication.type === type).sort((a, b) => b.year - a.year);
+export function fetchPublicationsByType(type: string): Publication[] {
+  return publications.filter(publication => publication.venue.type === type).sort((a, b) => b.year - a.year);
 }

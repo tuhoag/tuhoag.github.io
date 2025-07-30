@@ -1,6 +1,7 @@
-import { settings } from "../settings";
+import { getContact } from "../api/contact";
 import type { Publication } from "../types";
-import Icon from "./Icon";
+import Authors from "./Authors";
+import PaperLinks from "./PaperLinks";
 
 export default function PapersList({ title, papers }: { title: string, papers: Publication[] }) {
   return (
@@ -16,15 +17,7 @@ export default function PapersList({ title, papers }: { title: string, papers: P
 }
 
 function PaperItem({ paper, index }: { paper: Publication, index: number }) {
-  const authorsText = paper.authors.map((author, i) => {
-    const isHighlighted = author === settings.ownerAuthor;
-    return (
-      <span key={i} className={isHighlighted ? "text-primary fw-semibold" : ""}>
-        {author}
-        {i < paper.authors.length - 1 ? ", " : ""}
-      </span>
-    );
-  });
+  const contact = getContact();
 
   return (
     <div className="row mb-3 pb-1">
@@ -34,24 +27,13 @@ function PaperItem({ paper, index }: { paper: Publication, index: number }) {
             {index + 1}.{' '}{paper.title}
           </div>
           <div className="authors lead line-clamp-3">
-            {authorsText}
+            <Authors authors={paper.authors} highlightAuthor={contact.name} />
           </div>
           <div className="lead text-secondary">
-            {paper.year} &bull; {paper.venue}
+            {paper.year} &bull; {paper.venue.title}
           </div>
           <div>
-            {paper.links && paper.links.length > 0 && (
-              <div className="">
-                {paper.links.map((link, i) => (
-                  <div key={i} className="d-inline-block me-2">
-                    <Icon name={link.icon} className="me-1" />
-                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="">
-                      {link.name}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            )}
+            <PaperLinks links={paper.links} />
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
+import { getContact } from "../api/contact";
 import { fetchHighlightPublications as fetchHighlightPublications } from "../api/publications";
-import { settings } from "../settings";
 import type { Publication } from "../types";
+import Authors from "./Authors";
 import DashboardSection from "./DashboardSection";
+import PaperLinks from "./PaperLinks";
 
 interface DashboardPaperItemInterface {
   publication: Publication,
@@ -9,15 +11,7 @@ interface DashboardPaperItemInterface {
 }
 
 function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface) {
-  const authorsText = publication.authors.map((author, i) => {
-    const isHighlighted = author === settings.ownerAuthor;
-    return (
-      <span key={i} className={isHighlighted ? "text-primary fw-semibold" : ""}>
-        {author}
-        {i < publication.authors.length - 1 ? ", " : ""}
-      </span>
-    );
-  });
+  const contact = getContact();
 
   return (
     <div className="dashboard-paper mb-1">
@@ -25,13 +19,15 @@ function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface)
         {index + 1}.{' '}{publication.title}
       </div>
       <div className="authors lead line-clamp-3">
-        {authorsText}
+        <Authors authors={publication.authors} highlightAuthor={contact.name} />
       </div>
       <div className="lead text-secondary">
-        {publication.year} &bull; {publication.venue}
+        {publication.year} &bull; {publication.venue.title}
+      </div>
+      <div>
+        <PaperLinks links={publication.links} />
       </div>
     </div>
-
   );
 }
 
