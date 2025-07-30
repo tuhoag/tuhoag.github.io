@@ -64,6 +64,7 @@ const publications = [
     },
     year: 2024,
     highlight: true,
+    best_paper_award: true,
     links: [
       {
         name: 'Link',

@@ -25,7 +25,7 @@ export interface Publication {
   },
   year: number,
   highlight: boolean,
-
+  best_paper_award?: boolean,
   links?: Link[]
 }
 export interface Talk {

@@ -4,6 +4,7 @@ import type { Publication } from "../types";
 import Authors from "./Authors";
 import DashboardSection from "./DashboardSection";
 import PaperLinks from "./PaperLinks";
+import PaperTitle from "./PaperTitle";
 
 interface DashboardPaperItemInterface {
   publication: Publication,
@@ -16,7 +17,7 @@ function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface)
   return (
     <div className="dashboard-paper mb-1">
       <div className="title lead fw-semibold line-clamp-3">
-        {index + 1}.{' '}{publication.title}
+        <PaperTitle publication={publication} index={index} />
       </div>
       <div className="authors lead line-clamp-3">
         <Authors authors={publication.authors} highlightAuthor={contact.name} />
