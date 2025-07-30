@@ -1,5 +1,4 @@
 import { fetchTalks } from "../api/talks";
-import PapersList from "../components/PapersList";
 import TalksList from "../components/TalksList";
 
 export default function Talks() {

@@ -1,7 +1,10 @@
-const talks = [
+import type { Talk } from "../types";
+
+const talks: Talk[] = [
   {
     title: 'Introduction to Privacy-preserving Techniques for AI',
-    date: '05/2023',
+    year: 2023,
+    month: 5,
     location: 'Online Summer Talk, University of Science, Ho Chi Minh City, Vietnam',
     description: 'This presentation introduces the overview of state-of-the-art privacy-preserving techniques for AI applications: k-Anonymity, Differential Privacy, Homomorphic Encryption, and Federated Learning.',
     links: [
@@ -14,7 +17,8 @@ const talks = [
   },
   {
     title: 'Private Federated Learning Knowledge Graph Representation Learning',
-    date: '10/2022',
+    year: 2022,
+    month: 10,
     location: 'Lab Meeting, University of Insubria, Varese, Italy',
     description: 'This presentation introduces my investigation on the privacy protection techniques for learning knowledge graph representation under federated learning settings by using differential privacy.',
     links: [
@@ -27,7 +31,8 @@ const talks = [
   },
   {
     title: 'Time-Aware Anonymization of Knowledge Graphs',
-    date: '06/2022',
+    year: 2022,
+    month: 6,
     location: 'the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany',
     description: 'This presentation introduces my k-anonymity technique protecting data owners from identity and attribute leakage even though adversaries have access to all published anonymized versions of a knowledge graph.',
     links: [
@@ -40,7 +45,8 @@ const talks = [
   },
   {
     title: 'Transparency in Proximity Advertising Campaigns',
-    date: '06/2022',
+    year: 2022,
+    month: 6,
     location: 'the Cyber Security Competence for Research and Innovation Project (CONCORDIA) Meeting, Munich, Germany',
     description: 'This presentation introduces my blockchain-based platform ensuring the transparency of marketing campaign effectiveness measurement and privacy of participants (marketers, publishers, and customers)',
     links: [
@@ -53,7 +59,8 @@ const talks = [
   },
   {
     title: 'Differential Privacy: Foundation, Applications, and Challenges',
-    date: '09/2021',
+    year: 2021,
+    month: 9,
     location: 'Lab Meeting, University of Insubria, Varese, Italy',
     description: 'This presentation covers basic concepts of differential privacy.',
     links: [
@@ -66,7 +73,8 @@ const talks = [
   },
   {
     title: 'Adversarial Machine Learning',
-    date: '11/2020',
+    year: 2020,
+    month: 11,
     location: 'Lab Meeting, University of Insubria, Varese, Italy',
     description: 'This presentation introduces some adversarial machine learning attacks.',
     links: [
@@ -79,6 +87,11 @@ const talks = [
   }
 ];
 
-export function fetchTalks() {
-  return talks;
+export function fetchTalks(): Talk[] {
+  return talks.sort((a, b) => {
+    if (a.year !== b.year) {
+      return b.year - a.year;
+    }
+    return b.month - a.month;
+  });
 }

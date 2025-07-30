@@ -1,4 +1,3 @@
-import { settings } from "../settings";
 import type { Talk } from "../types";
 import Icon from "./Icon";
 
@@ -6,13 +5,13 @@ export default function TalksList({ talks }: { talks: Talk[] }) {
   return (
     <>
       {talks.map((talk, index) => (
-        <TalkItem key={talk.id} talk={talk} index={index} />
+        <TalkItem key={index} talk={talk} index={index} />
       ))}
     </>
   );
 }
 
-function TalkItem({ talk, index }: { paper: Talk, index: number }) {
+function TalkItem({ talk, index }: { talk: Talk, index: number }) {
   return (
     <div className="row mb-3 pb-1">
       <div className="col-11">
@@ -21,7 +20,7 @@ function TalkItem({ talk, index }: { paper: Talk, index: number }) {
             {index + 1}.{' '}{talk.title}
           </div>
           <div className="lead text-secondary">
-            {talk.date} &bull; {talk.location}
+            {talk.month.toString().padStart(2, "0")}/{talk.year} &bull; {talk.location}
           </div>
           <div>
             {talk.links && talk.links.length > 0 && (
@@ -40,7 +39,7 @@ function TalkItem({ talk, index }: { paper: Talk, index: number }) {
         </div>
       </div>
       <div className="col-1 d-flex align-items-right fs-3 text-secondary lead fw-bold">
-        {talk.date.split('/')[1]}
+        {talk.year}
       </div>
     </div>
   );

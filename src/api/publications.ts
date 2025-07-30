@@ -1,4 +1,3 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
 import type { Publication } from "../types";
 
 const authors = [
