@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { getContact, getResearchInterests, getSocialAccounts } from "../api/contact";
 import { getSiteLinks } from "../api/links";
 import Icon from "./Icon";
@@ -49,9 +50,9 @@ function Footer() {
                 {links.map(
                   (link, idx) => (
                     <li className="nav-item mb-2" key={idx}>
-                      <a href={link.url} className="nav-link p-0 text-body-secondary">
+                      <NavLink to={link.url} className="nav-link p-0 text-body-secondary">
                         {link.title}
-                      </a>
+                      </NavLink>
                     </li>
                   )
                 )}

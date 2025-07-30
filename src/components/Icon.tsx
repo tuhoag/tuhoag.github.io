@@ -17,7 +17,11 @@ const iconData: IconData = {
   'programming': 'bi bi-code-square',
   'blockchain': 'bi bi-currency-bitcoin',
   'machine-learning-lib': 'bi bi-wrench',
-  'zkp': 'bi bi-card-checklist'
+  'zkp': 'bi bi-card-checklist',
+  'web': 'bi bi-globe',
+  'code': 'bi bi-code-slash',
+  'blog': 'bi bi-pencil-square',
+  'slides': 'bi bi-file-slides',
 };
 
 function Icon({name, className}: {name: string, className: string}) {

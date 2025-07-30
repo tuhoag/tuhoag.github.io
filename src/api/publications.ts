@@ -1,3 +1,6 @@
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import type { Publication } from "../types";
+
 const authors = [
   {
     name: 'Anh-Tu Hoang',
@@ -34,6 +37,19 @@ const publications = [
     venue: 'Proceedings of the Workshops of the EDBT/ICDT Joint Conference',
     year: 2023,
     highlight: true,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://ceur-ws.org/Vol-3379/DATUM_2023_11.pdf',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/Lekssays/formica/',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'zkfl-agg',
@@ -43,6 +59,19 @@ const publications = [
     venue: 'IEEE International Conference on Blockchain',
     year: 2024,
     highlight: true,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/Blockchain62396.2024.00017',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/ElmiraEbrahimi/Veriblock-FL',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'zkssi',
@@ -52,6 +81,19 @@ const publications = [
     venue: 'IEEE International Conference on Blockchain',
     year: 2024,
     highlight: true,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/Blockchain62396.2024.00043',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/tuhoag/zkSSI',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'promark',
@@ -61,6 +103,19 @@ const publications = [
     venue: 'IEEE Transactions on Dependable and Secure Computing',
     year: 2025,
     highlight: true,
+    type: 'Journal Article',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/TDSC.2024.3478049',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/tuhoag/promark',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'per-anonykg',
@@ -69,7 +124,20 @@ const publications = [
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
     venue: 'IEEE Transactions on Dependable and Secure Computing',
     year: 2024,
-    highlight: false,
+    highlight: true,
+    type: 'Journal Article',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/TDSC.2023.3300360',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/tuhoag/personalized-anony-kg',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'seq-anonykg',
@@ -78,7 +146,20 @@ const publications = [
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
     venue: 'ACM Transactions on Privacy and Security',
     year: 2023,
-    highlight: false,
+    highlight: true,
+    type: 'Journal Article',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1145/3563694',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/tuhoag/sequential-anonygraph',
+        icon: 'code'
+      }
+    ]
   },
   {
     id: 'seq-anonykg-ori',
@@ -87,7 +168,30 @@ const publications = [
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
     venue: 'IEEE International Conference on Data Engineering',
     year: 2021,
-    highlight: false,
+    highlight: true,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/ICDE51399.2021.00194',
+        icon: 'web'
+      },
+      {
+        name: 'Code',
+        url: 'https://github.com/tuhoag/sequential-anonygraph',
+        icon: 'code'
+      },
+      {
+        name: 'Blog',
+        url: 'https://www.linkedin.com/posts/concordia-h2020_knowledge-graphs-are-widely-shared-because-activity-6977540011185352704-1dIw?utm_source=share&utm_medium=member_desktop&rcm=ACoAABLotH8B5_VQntPlKhw1Hk7AnTcDhm6iapY',
+        icon: 'blog'
+      },
+      {
+        name: 'Slides',
+        url: '/src/assets/slides/Sequential_Anonymization_of_Knowledge_Graphs-ICDE-Tu_Hoang.pdf',
+        icon: 'slides'
+      }
+    ]
   },
   {
     id: 'anonykg',
@@ -96,7 +200,20 @@ const publications = [
     authors: ['Anh-Tu Hoang', 'Barbara Carminati', 'Elena Ferrari'],
     venue: 'Applied Cryptography and Network Security',
     year: 2020,
-    highlight: false,
+    highlight: true,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1007/978-3-030-57878-7\_6',
+        icon: 'web'
+      },
+      {
+        name: 'Slides',
+        url: 'Cluster-based_Anonymization_of_Knowledge_Graphs-ACNS-TuHoang.pdf',
+        icon: 'slides'
+      }
+    ]
   },
   {
     id: 'anonydg',
@@ -106,6 +223,14 @@ const publications = [
     venue: 'IEEE International Conference on Collaboration and Internet Computing',
     year: 2019,
     highlight: false,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/CIC48465.2019.00020',
+        icon: 'web'
+      }
+    ]
   },
   {
     id: 'anonytext',
@@ -115,6 +240,14 @@ const publications = [
     venue: 'Digital-Forensics and Watermarking',
     year: 2014,
     highlight: false,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1007/978-3-662-43886-2\_31',
+        icon: 'web'
+      }
+    ]
   },
   {
     id: 'anony-watermark',
@@ -124,6 +257,14 @@ const publications = [
     venue: 'Digital-Forensics and Watermarking',
     year: 2014,
     highlight: false,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1007/978-3-662-43886-2\_15',
+        icon: 'web'
+      }
+    ]
   },
   {
     id: 'anonyrd',
@@ -133,9 +274,25 @@ const publications = [
     venue: 'IEEE International Conference on Computational Intelligence and Security',
     year: 2012,
     highlight: false,
+    type: 'Conference Paper',
+    links: [
+      {
+        name: 'Link',
+        url: 'https://doi.org/10.1109/CIS.2012.148',
+        icon: 'web'
+      }
+    ]
   },
 ];
 
 export function fetchHighlightPublications() {
   return publications.filter(publication => publication.highlight);
+}
+
+export function fetchAuthors() {
+  return authors;
+}
+
+export function fetchPublicationsByType(type: 'Conference Paper' | 'Journal Article'): Publication[] {
+  return publications.filter(publication => publication.type === type).sort((a, b) => b.year - a.year);
 }

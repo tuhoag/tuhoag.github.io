@@ -8,7 +8,7 @@ interface DashboardPaperItemInterface {
   index: number
 }
 
-function DashboardPaperItem({ publication }: DashboardPaperItemInterface) {
+function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface) {
   const authorsText = publication.authors.map((author, i) => {
     const isHighlighted = author === settings.ownerAuthor;
     return (
@@ -21,8 +21,8 @@ function DashboardPaperItem({ publication }: DashboardPaperItemInterface) {
 
   return (
     <div className="dashboard-paper mb-1">
-      <div className="title lead fw-bold line-clamp-3">
-        {publication.title}
+      <div className="title lead fw-semibold line-clamp-3">
+        {index + 1}.{' '}{publication.title}
       </div>
       <div className="authors lead line-clamp-3">
         {authorsText}

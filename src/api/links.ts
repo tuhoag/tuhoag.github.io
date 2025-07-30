@@ -1,23 +1,23 @@
 const siteLinks = [
   {
     title: 'Home',
-    url: '#',
+    url: '/',
   },
   {
     title: 'Projects',
-    url: '#',
+    url: '/projects',
   },
   {
     title: 'Publications',
-    url: '#',
+    url: '/publications',
   },
   {
     title: 'Talks',
-    url: '#',
+    url: '/talks',
   },
   {
     title: 'About',
-    url: '#',
+    url: '/about',
   },
 ];
 

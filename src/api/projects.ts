@@ -10,7 +10,7 @@ const projects = [
   },
   {
     id: 'ssi',
-    name: 'Self-Sovereign Identity',
+    name: 'Zero-Knowledge Self-Sovereign Identity',
     startYear: 2023,
     endYear: undefined,
     imageUrl: '/src/assets/ssi.svg',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 'bi',
-    name: 'Blockchain Interoperability',
+    name: 'Rollup Blockchain Interoperability',
     startYear: 2023,
     endYear: undefined,
     imageUrl: '/src/assets/zkSSI-cross-chain.svg',
@@ -31,17 +31,17 @@ const projects = [
     name: 'Blockchain-Based Proximity Marketing',
     startYear: 2022,
     endYear: 2024,
-    imageUrl: '',
-    highlight: false,
+    imageUrl: '/src/assets/promark.svg',
+    highlight: true,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   },
   {
     id: 'anony',
-    name: 'Privacy-Preserving Publishing of Knowledge Graphs',
+    name: 'Privacy-Preserving Data Publishing',
     startYear: 2011,
     endYear: 2024,
-    imageUrl: '',
-    highlight: false,
+    imageUrl: '/src/assets/anonygraph.svg',
+    highlight: true,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   }
 ];

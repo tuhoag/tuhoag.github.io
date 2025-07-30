@@ -16,4 +16,22 @@ export interface Publication {
   venue: string,
   year: number,
   highlight: boolean,
+  type: string,
+  links?: {
+    name: string,
+    url: string,
+    icon: string
+  }[]
+}
+
+export interface Talk {
+  title: string,
+  date: string,
+  location: string,
+  description: string,
+  links?: {
+    name: string,
+    url: string,
+    icon: string
+  }[]
 }
