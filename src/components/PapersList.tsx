@@ -1,25 +1,22 @@
-import { getContact } from "../api/contact";
-import type { Publication } from "../types";
+import type { Contact, Publication } from "../types";
 import Authors from "./Authors";
 import PaperLinks from "./PaperLinks";
 import PaperTitle from "./PaperTitle";
 
-export default function PapersList({ title, papers }: { title: string, papers: Publication[] }) {
+export default function PapersList({ title, contact, papers }: { title: string, contact: Contact, papers: Publication[] }) {
   return (
     <>
       <h2 className="display-6 mb-3">
         {title}
       </h2>
       {papers.map((paper, index) => (
-        <PaperItem key={paper.id} paper={paper} index={index} />
+        <PaperItem key={paper.id} paper={paper} contact={contact} index={index} />
       ))}
     </>
   );
 }
 
-function PaperItem({ paper, index }: { paper: Publication, index: number }) {
-  const contact = getContact();
-
+function PaperItem({ paper, contact, index }: { paper: Publication, contact: Contact, index: number }) {
   return (
     <div className="row mb-3 pb-1">
       <div className="col-11">

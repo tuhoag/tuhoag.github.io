@@ -162,18 +162,18 @@ const skills: Skill[] = [
   },
 ];
 
-export function getContact(): Contact {
+export function fetchContact(): Contact {
   return contact;
 }
 
-export function getSocialAccounts(): Link[]  {
+export function fetchSocialAccounts(): Link[]  {
   return socialAccounts;
 }
 
-export function getResearchInterests(): ResearchInterest[] {
+export function fetchResearchInterests(): ResearchInterest[] {
   return researchInterests;
 }
 
-export function getSkills(): Skill[] {
+export function fetchSkills(): Skill[] {
   return skills;
 }

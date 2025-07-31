@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import type { Project } from "../types";
 
 interface DashboardProjectItemProps {
@@ -25,7 +26,10 @@ export function DashboardProjectItem({ project, index, width, height }: Dashboar
         <p className="lead mb-3">
           {project.shortDescription}
         </p>
-        <button className="btn btn-sm btn-outline-primary">See more</button>
+        <NavLink to={`/project/${project.id}`} className="btn btn-sm btn-outline-primary mb-3">
+          See more
+        </NavLink>
+        {/* <button className="btn btn-sm btn-outline-primary">See more</button> */}
       </div>
       <div className="col-md-5">
         <img src={project.imageUrl || 'https://via.placeholder.com/100'} width={width} height={height} className="card-img-top" alt={project.name} />

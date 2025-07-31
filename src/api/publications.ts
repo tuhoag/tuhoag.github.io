@@ -348,3 +348,8 @@ export function fetchAuthors() {
 export function fetchPublicationsByType(type: string): Publication[] {
   return publications.filter(publication => publication.venue.type === type).sort((a, b) => b.year - a.year);
 }
+
+
+export function fetchPublicationsByProject(projectId: string) {
+  return publications.filter(publication => publication.project === projectId).sort((a, b) => b.year - a.year);
+}

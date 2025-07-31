@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Publications from "./pages/Publications";
 import Talks from "./pages/Talks";
 import PageLayout from "./layouts/PageLayout";
+import ProjectDetail from "./pages/ProjectDetail";
 
 export default createBrowserRouter([
   {
@@ -19,9 +20,18 @@ export default createBrowserRouter([
           { path: "projects", Component: Projects, handle: { title: "Projects" } },
           { path: "publications", Component: Publications, handle: { title: "Publications" } },
           { path: "talks", Component: Talks, handle: { title: "Talks" } },
-          { path: "about", Component: About, handle: { title: "About" } },
+          { path: "about", Component: About, handle: { title: "About" } }
         ]
-      }
+      },
+      {
+        path: "project",
+        children: [
+          {
+            path: ":projectId",
+            Component: ProjectDetail
+          }
+        ]
+      },
     ]
   },
 ]);

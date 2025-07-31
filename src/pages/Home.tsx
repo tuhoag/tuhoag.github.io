@@ -2,16 +2,16 @@ import Hero from '../components/Hero';
 import FeaturetteProjects from '../components/FeaturetteProjects';
 import DashboardPapers from '../components/DashboardPapers';
 import { fetchHighlightProjects } from '../api/projects';
-import { getContact, getResearchInterests, getSkills } from '../api/contact';
+import { fetchContact, fetchResearchInterests, fetchSkills } from '../api/contact';
 import { fetchHighlightPublications } from '../api/publications';
 import DashboardSection from '../components/DashboardSection';
 // import CardProjects from '../components/CardProjects';
 
 export default function Home() {
   const projects = fetchHighlightProjects();
-  const researchInterests = getResearchInterests();
-  const contact = getContact();
-  const skills = getSkills();
+  const researchInterests = fetchResearchInterests();
+  const contact = fetchContact();
+  const skills = fetchSkills();
   const publications = fetchHighlightPublications();
   const width = 300;
   const height = 250;

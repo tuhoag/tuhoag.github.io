@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import type { Project } from "../types";
 
 interface CardProjectItemProps {
@@ -22,8 +23,10 @@ export function CardProjectItem({ project, index, width, height }: CardProjectIt
           <p className="card-text">{project.shortDescription}</p>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
-              <button type="button" className="btn btn-sm btn-outline-primary">See more</button>
-              {/* <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button> */}
+              <NavLink to={`/project/${project.id}`} className="btn btn-sm btn-outline-primary">
+                See more
+              </NavLink>
+              {/* <button type="button" className="btn btn-sm btn-outline-primary">See more</button> */}
             </div>
             {/* <small className="text-body-secondary">9 mins</small> */}
           </div>

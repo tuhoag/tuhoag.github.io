@@ -4,8 +4,10 @@ export interface Project {
   startYear: number,
   endYear: undefined | number,
   imageUrl: string,
-  highlight: boolean,
-  shortDescription: string
+  // highlight: boolean,
+  highlightOrder?: number, // Optional field for ordering highlights
+  shortDescription: string,
+  description: string[],
 }
 
 export interface Link {
