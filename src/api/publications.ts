@@ -316,6 +316,25 @@ const publications = [
       }
     ]
   },
+  {
+    id: '',
+    project: '',
+    title: 'BeadNet: a network for automated spherical marker detection in radiographs for geometry calibration',
+    authors: ['Van Nguyen', 'Jan De Beenhouwer', 'Shabab Bazrafkan', 'Anh-Tu Hoang', 'Sam Van Wassenbergh', 'Jan Sijbers'],
+    venue: {
+      title: 'International Conference on Image Formation in X-Ray Computed Tomography',
+      type: 'Conference Paper',
+    },
+    year: 2020,
+    highlight: false,
+    links: [
+      {
+        name: 'Link',
+        url: 'https://hdl.handle.net/10067/1754090151162165141',
+        icon: 'web'
+      }
+    ],
+  }
 ];
 
 export function fetchHighlightPublications() {
