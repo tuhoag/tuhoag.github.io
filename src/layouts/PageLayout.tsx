@@ -10,7 +10,7 @@ function PageLayout() {
 
   return (
     <>
-      <div className="d-flex flex-column flex-md-row align-items-center">
+      <div className="d-flex flex-column flex-md-row align-items-center bg-body-secondary">
         <div className="col-12 mb-3 mt-2">
           {/* Display the title if it exists */}
           {title && (

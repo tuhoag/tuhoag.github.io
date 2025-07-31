@@ -1,4 +1,6 @@
-const contact = {
+import type { Contact, Link, ResearchInterest, Skill } from "../types";
+
+const contact: Contact = {
   prefix: 'Dr',
   name: 'Anh-Tu Hoang',
   shortName: 'Tu Hoang',
@@ -17,7 +19,7 @@ const contact = {
   footnoteMessage: `I'm open to industry collaboration and exploring new roles in privacy, security, machine learning, and decentralized systems. Feel free to reach out.`,
 }
 
-const researchInterests = [
+const researchInterests: ResearchInterest[] = [
   {
     title: 'Privacy / Security',
     url: '#',
@@ -40,7 +42,7 @@ const researchInterests = [
   }
 ]
 
-const socialAccounts = [
+const socialAccounts: Link[] = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/tuhoag/",
@@ -68,7 +70,7 @@ const socialAccounts = [
   },
 ];
 
-const skills = [
+const skills: Skill[] = [
   {
     title: 'Programming',
     icon: 'programming',
@@ -160,18 +162,18 @@ const skills = [
   },
 ];
 
-export function getContact() {
+export function getContact(): Contact {
   return contact;
 }
 
-export function getSocialAccounts() {
+export function getSocialAccounts(): Link[]  {
   return socialAccounts;
 }
 
-export function getResearchInterests() {
+export function getResearchInterests(): ResearchInterest[] {
   return researchInterests;
 }
 
-export function getSkills() {
+export function getSkills(): Skill[] {
   return skills;
 }

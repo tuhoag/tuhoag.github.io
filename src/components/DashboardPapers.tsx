@@ -1,19 +1,15 @@
-import { getContact } from "../api/contact";
-import { fetchHighlightPublications as fetchHighlightPublications } from "../api/publications";
-import type { Publication } from "../types";
+import type { Contact, Publication } from "../types";
 import Authors from "./Authors";
-import DashboardSection from "./DashboardSection";
 import PaperLinks from "./PaperLinks";
 import PaperTitle from "./PaperTitle";
 
 interface DashboardPaperItemInterface {
   publication: Publication,
-  index: number
+  index: number,
+  contact: Contact
 }
 
-function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface) {
-  const contact = getContact();
-
+function DashboardPaperItem({ publication, index, contact }: DashboardPaperItemInterface) {
   return (
     <div className="dashboard-paper mb-1">
       <div className="title lead fw-semibold line-clamp-3">
@@ -32,22 +28,24 @@ function DashboardPaperItem({ publication, index }: DashboardPaperItemInterface)
   );
 }
 
-function DashboardPapers() {
-  let publications = fetchHighlightPublications();
-  publications.sort((a, b) => b.year - a.year);
+interface DashboardPapersProps {
+  publications: Publication[];
+  contact: Contact;
+}
 
+function DashboardPapers({ publications, contact }: DashboardPapersProps) {
   return (
-    <DashboardSection title="Highlight Publications">
+    <>
       {
         publications.map((paper, index) => (
-          <div className="row mb-3">
+          <div className="row mb-3" key={paper.id}>
             <div className="col-12">
-              <DashboardPaperItem publication={paper} index={index} />
+              <DashboardPaperItem publication={paper} index={index} contact={contact} />
             </div>
           </div>
         ))
       }
-    </DashboardSection>
+    </>
   );
 }
 

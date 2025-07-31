@@ -1,12 +1,14 @@
-import { getContact, getResearchInterests, getSkills } from '../api/contact';
 import avatarUrl from '../assets/portfolio-avatar.jpg';
+import type { Contact, ResearchInterest, Skill } from '../types';
 import Icon from './Icon';
 
-function Hero() {
-  const researchInterests = getResearchInterests();
-  const contact = getContact();
-  const skills = getSkills();
+interface HeroProps {
+  contact: Contact,
+  researchInterests: ResearchInterest[],
+  skills: Skill[]
+}
 
+function Hero({contact, researchInterests, skills}: HeroProps) {
   return (
     <div className="row g-5 py-5">
         <div className="col-4">

@@ -41,11 +41,15 @@ const projects = [
     startYear: 2011,
     endYear: 2024,
     imageUrl: '/src/assets/anonygraph.svg',
-    highlight: true,
+    highlight: false,
     shortDescription: 'This project anonymizes graphs to prevent linkage and inference attacks by using k-anonymity while ensuring graph quality for machine learning.'
   }
 ];
 
 export function fetchHighlightProjects() {
-  return projects.filter(project => project.highlight === true);
+  return projects.filter(project => project.highlight === true).sort((a, b) => b.startYear - a.startYear);
+}
+
+export function fetchProjects() {
+  return projects.sort((a, b) => b.startYear - a.startYear);
 }

@@ -36,3 +36,37 @@ export interface Talk {
   description: string,
   links?: Link[]
 }
+
+export interface ResearchInterest {
+  title: string,
+  url: string,
+  icon: string
+}
+
+export interface Skill {
+  title: string,
+  icon: string,
+  subSkills: {
+    title: string,
+    url: string,
+    icon: string
+  }[]
+
+}
+
+export interface Contact {
+  prefix: string,
+  name: string,
+  shortName: string,
+  affiliation: Affiliation,
+  position: string,
+  address: string,
+  emails: string[],
+  description: string[],
+  footnoteMessage: string,
+}
+
+export interface Affiliation {
+  name: string,
+  url: string
+}

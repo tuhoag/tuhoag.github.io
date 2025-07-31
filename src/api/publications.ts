@@ -338,7 +338,7 @@ const publications = [
 ];
 
 export function fetchHighlightPublications() {
-  return publications.filter(publication => publication.highlight);
+  return publications.filter(publication => publication.highlight).sort((a, b) => b.year - a.year);
 }
 
 export function fetchAuthors() {

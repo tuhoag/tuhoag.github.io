@@ -1,16 +1,13 @@
-import { fetchHighlightProjects } from "../api/projects"
 import type { Project } from "../types";
-import DashboardSection from "./DashboardSection";
-
-const width = 250;
-const height = 250;
 
 interface DashboardProjectItemProps {
   project: Project,
-  index: number
+  index: number,
+  width: number,
+  height: number
 }
 
-function DashboardProjectItem({ project, index }: DashboardProjectItemProps) {
+export function DashboardProjectItem({ project, index, width, height }: DashboardProjectItemProps) {
   const isReversed = index % 2 !== 0;
   const rowClass = `row align-items-center g-5 mb-3 featurette ${isReversed ? 'flex-row-reverse' : ''}`;
   const endYear = project.endYear ?? 'Present';
@@ -28,7 +25,7 @@ function DashboardProjectItem({ project, index }: DashboardProjectItemProps) {
         <p className="lead mb-3">
           {project.shortDescription}
         </p>
-        <button className="btn btn-primary">See more</button>
+        <button className="btn btn-sm btn-outline-primary">See more</button>
       </div>
       <div className="col-md-5">
         <img src={project.imageUrl || 'https://via.placeholder.com/100'} width={width} height={height} className="card-img-top" alt={project.name} />
@@ -37,17 +34,14 @@ function DashboardProjectItem({ project, index }: DashboardProjectItemProps) {
   );
 }
 
-function DashboardFeaturetteProjects() {
-  let projects = fetchHighlightProjects();
-  projects.sort((a, b) => b.startYear - a.startYear);
-
+function FeaturetteProjects({ projects, width, height }: { projects: Project[], width: number, height: number }) {
   return (
-    <DashboardSection title="Highlight Projects">
+    <>
       {projects.map((project, index) => (
-        <DashboardProjectItem key={project.id} project={project} index={index} />
+        <DashboardProjectItem key={project.id} project={project} index={index} width={width} height={height} />
       ))}
-    </DashboardSection>
+    </>
   );
 }
 
-export default DashboardFeaturetteProjects;
+export default FeaturetteProjects;

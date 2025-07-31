@@ -1,13 +1,32 @@
 import Hero from '../components/Hero';
-import DashboardFeaturetteProjects from '../components/DashboardFeaturetteProjects';
+import FeaturetteProjects from '../components/FeaturetteProjects';
 import DashboardPapers from '../components/DashboardPapers';
+import { fetchHighlightProjects } from '../api/projects';
+import { getContact, getResearchInterests, getSkills } from '../api/contact';
+import { fetchHighlightPublications } from '../api/publications';
+import DashboardSection from '../components/DashboardSection';
+// import CardProjects from '../components/CardProjects';
 
 export default function Home() {
+  const projects = fetchHighlightProjects();
+  const researchInterests = getResearchInterests();
+  const contact = getContact();
+  const skills = getSkills();
+  const publications = fetchHighlightPublications();
+  const width = 300;
+  const height = 250;
+
   return (
     <>
-      <Hero />
-      <DashboardFeaturetteProjects />
-      <DashboardPapers />
+      <Hero contact={contact} researchInterests={researchInterests} skills={skills} />
+      <DashboardSection title="Highlight Projects">
+        <FeaturetteProjects projects={projects} width={width} height={height} />
+      </DashboardSection>
+
+      {/* <CardProjects projects={projects} /> */}
+      <DashboardSection title="Highlight Publications">
+        <DashboardPapers publications={publications} contact={contact} />
+      </DashboardSection>
     </>
   );
 }
