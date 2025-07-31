@@ -11,7 +11,6 @@ function Footer() {
 
   return (
     <footer className="py-5 mt-5 border-top">
-      <div className="container">
         {/* Main footer layout */}
         <div className="d-flex flex-column flex-lg-row justify-content-between">
           {/* Left: About + Contact */}
@@ -94,7 +93,6 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
     </footer>
   );
 }
