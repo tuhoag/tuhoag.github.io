@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next';
 import { Outlet } from "react-router";
 
 import Header from '../components/Header'
@@ -17,7 +16,6 @@ function RootLayout() {
       <Header contact={contact} links={links} />
       <Outlet />
       <Footer contact={contact} links={links} accounts={accounts} researchInterests={researchInterests} />
-      <Analytics />
     </div>
   )
 }

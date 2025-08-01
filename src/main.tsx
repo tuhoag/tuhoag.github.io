@@ -2,6 +2,8 @@ import {
   RouterProvider,
 } from "react-router";
 
+import { Analytics } from '@vercel/analytics/react';
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
@@ -12,6 +14,7 @@ const root = document.getElementById("root")!;
 createRoot(root).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <Analytics />
   </StrictMode>
 );
 
