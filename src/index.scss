@@ -1,4 +1,4 @@
-@import "@bootstrap/scss/bootstrap";
-@import "@bootstrapicons/font/bootstrap-icons.css";
-@import "@facore/styles.css";
-@import "@fa/css/all.min.css";
+@use "@bootstrap/scss/bootstrap" as *;
+@use "@bootstrapicons/font/bootstrap-icons.css" as *;
+@use "@facore/styles.css" as *;
+@use "@fa/css/all.min.css" as *;
