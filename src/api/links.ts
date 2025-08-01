@@ -1,4 +1,6 @@
-const siteLinks = [
+import type { SiteLink } from "../types";
+
+const siteLinks: SiteLink[] = [
   {
     title: 'Home',
     url: '/',

@@ -79,3 +79,8 @@ export interface Affiliation {
   name: string,
   url: string
 }
+
+export interface SiteLink {
+  title: string,
+  url: string
+}

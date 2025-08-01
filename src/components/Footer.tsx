@@ -1,13 +1,8 @@
 import { NavLink } from "react-router";
-import { fetchContact, fetchResearchInterests, fetchSocialAccounts } from "../api/contact";
-import { getSiteLinks } from "../api/links";
 import Icon from "./Icon";
+import type { Contact, Link, ResearchInterest, SiteLink } from "../types";
 
-function Footer() {
-  const contact = fetchContact();
-  const links = getSiteLinks();
-  const accounts = fetchSocialAccounts();
-  const researchInterests = fetchResearchInterests();
+function Footer({contact, links, accounts, researchInterests}: {contact: Contact, links: SiteLink[], accounts: Link[], researchInterests: ResearchInterest[]}) {
 
   return (
     <footer className="py-5 mt-5 border-top">

@@ -5,7 +5,6 @@ import { fetchHighlightProjects } from '../api/projects';
 import { fetchContact, fetchResearchInterests, fetchSkills } from '../api/contact';
 import { fetchHighlightPublications } from '../api/publications';
 import DashboardSection from '../components/DashboardSection';
-// import CardProjects from '../components/CardProjects';
 
 export default function Home() {
   const projects = fetchHighlightProjects();
@@ -13,8 +12,6 @@ export default function Home() {
   const contact = fetchContact();
   const skills = fetchSkills();
   const publications = fetchHighlightPublications();
-  // const width = 300;
-  // const height = 250;
 
   return (
     <>
@@ -23,7 +20,6 @@ export default function Home() {
         <FeaturetteProjects projects={projects} />
       </DashboardSection>
 
-      {/* <CardProjects projects={projects} /> */}
       <DashboardSection title="Highlight Publications">
         <DashboardPapers publications={publications} contact={contact} />
       </DashboardSection>
