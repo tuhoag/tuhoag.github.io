@@ -38,7 +38,9 @@ export function DashboardProjectItem({ project, index, width, height }: Dashboar
   );
 }
 
-function FeaturetteProjects({ projects, width, height }: { projects: Project[], width: number, height: number }) {
+function FeaturetteProjects({ projects }: { projects: Project[] }) {
+  const width = 500;
+  const height = 300;
   return (
     <>
       {projects.map((project, index) => (

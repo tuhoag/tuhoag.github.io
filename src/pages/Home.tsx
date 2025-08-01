@@ -13,14 +13,14 @@ export default function Home() {
   const contact = fetchContact();
   const skills = fetchSkills();
   const publications = fetchHighlightPublications();
-  const width = 300;
-  const height = 250;
+  // const width = 300;
+  // const height = 250;
 
   return (
     <>
       <Hero contact={contact} researchInterests={researchInterests} skills={skills} />
       <DashboardSection title="Highlight Projects">
-        <FeaturetteProjects projects={projects} width={width} height={height} />
+        <FeaturetteProjects projects={projects} />
       </DashboardSection>
 
       {/* <CardProjects projects={projects} /> */}

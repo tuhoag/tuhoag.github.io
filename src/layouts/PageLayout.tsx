@@ -1,7 +1,5 @@
 import { Outlet, useMatches, type UIMatch } from "react-router";
 
-import '../App.scss'
-
 type MatchWithHandle = UIMatch<unknown, { title?: string }>;
 
 function PageLayout() {
