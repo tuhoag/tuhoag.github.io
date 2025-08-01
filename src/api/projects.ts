@@ -1,4 +1,9 @@
 import type { Project } from "../types";
+import dlUrl from '../assets/bdl.svg';
+import ssiUrl from '../assets/ssi.svg';
+import biUrl from '../assets/zkSSI-cross-chain.svg';
+import promarkUrl from '../assets/promark.svg';
+import anonygraphUrl from '../assets/anonygraph.svg';
 
 const projects: Project[] = [
   {
@@ -6,7 +11,7 @@ const projects: Project[] = [
     name: 'Zero-Knowledge Federated Learning',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '/src/assets/bdl.svg',
+    imageUrl: dlUrl,
     // highlight: true,
     highlightOrder: 3,
     shortDescription: [
@@ -40,7 +45,7 @@ const projects: Project[] = [
     name: 'Zero-Knowledge Self-Sovereign Identity',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '/src/assets/ssi.svg',
+    imageUrl: ssiUrl,
     highlightOrder: 1,
     shortDescription: [
       [
@@ -77,7 +82,7 @@ const projects: Project[] = [
     name: 'Scalable Blockchain Interoperability',
     startYear: 2023,
     endYear: undefined,
-    imageUrl: '/src/assets/zkSSI-cross-chain.svg',
+    imageUrl: biUrl,
     highlightOrder: 2,
     shortDescription: [
       [
@@ -104,7 +109,7 @@ const projects: Project[] = [
     name: 'Blockchain-Based Proximity Marketing',
     startYear: 2022,
     endYear: 2024,
-    imageUrl: '/src/assets/promark.svg',
+    imageUrl: promarkUrl,
     highlightOrder: 4,
     shortDescription: [
       [
@@ -129,7 +134,7 @@ const projects: Project[] = [
     name: 'Privacy-Preserving Data Publishing',
     startYear: 2011,
     endYear: 2024,
-    imageUrl: '/src/assets/anonygraph.svg',
+    imageUrl: anonygraphUrl,
     // highlightOrder: 5,
     shortDescription: [
       [
