@@ -24,8 +24,8 @@ function Footer() {
                 <Icon name="address" className="me-2" />
                 {contact.address}
               </li>
-              {contact.emails.map((emailAddress => (
-                <li className="nav-item mb-2">
+              {contact.emails.map(((emailAddress, index) => (
+                <li key={`link-${index}`} className="nav-item mb-2">
                   <a
                     href={`mailto:${emailAddress}`}
                     className="nav-link p-0 text-body-secondary"
@@ -37,7 +37,12 @@ function Footer() {
               )))}
 
             </ul>
-            <p className="text-muted small mb-0">© 2025 {contact.shortName}. All rights reserved.</p>
+            <p className="text-muted small mb-0">
+              © 2025 {contact.shortName}. All rights reserved. Designed by me using{' '}
+              <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">React</a>,{' '}
+              <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">Vite</a>, and{' '}
+              <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap</a>.
+            </p>
           </div>
 
           {/* Right: Links / Research / Social */}

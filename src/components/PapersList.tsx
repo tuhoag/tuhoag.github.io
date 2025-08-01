@@ -10,7 +10,7 @@ export default function PapersList({ title, contact, papers }: { title: string, 
         {title}
       </h2>
       {papers.map((paper, index) => (
-        <PaperItem key={paper.id} paper={paper} contact={contact} index={index} />
+        <PaperItem key={`paperitem-${paper.id}`} paper={paper} contact={contact} index={index} />
       ))}
     </>
   );

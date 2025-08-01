@@ -3,6 +3,7 @@ import { fetchProjectById } from "../api/projects";
 import { fetchPublicationsByProject } from "../api/publications";
 import PapersList from "../components/PapersList";
 import { fetchContact } from "../api/contact";
+import { MultiParagraphDescription } from "../components/MultiParagraphDescription";
 
 export default function ProjectDetail() {
   const { projectId } = useParams();
@@ -22,23 +23,22 @@ export default function ProjectDetail() {
           <h1 className="display-5 fw-normal text-body-emphasis lh-1 mb-0 text-start">
             {project!.name}
           </h1>
-          <p className="text-body-secondary fs-5">
+          <div className="text-body-secondary fs-5">
             {project!.startYear} - {project!.endYear ?? 'Present'}
-          </p>
-          <p className="fs-5 col-md-8">
-            {project!.shortDescription}
-          </p>
+          </div>
+          <div className="fs-5">
+            <MultiParagraphDescription description={project!.shortDescription} />
+            {/* {project!.shortDescription} */}
+          </div>
         </div>
       </div>
       <div className="row g-5 py-5">
         <div className="col-12">
           <div className="clearfix">
             <img src={project.imageUrl} className="col-md-6 float-md-end mb-3 ms-md-3" alt={project.name} />
-            {project.description.map((text, index) => (
-              <p key={index} className="lead">
-                {text}
-              </p>
-            ))}
+            <div className="lead">
+              <MultiParagraphDescription description={project.description} />
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,10 @@
+export type DescriptionItem = string | {
+  url: string,
+  text: string
+}
+
+export type MultiPartDescription = string | DescriptionItem[];
+
 export interface Project {
   id: string,
   name: string,
@@ -6,8 +13,8 @@ export interface Project {
   imageUrl: string,
   // highlight: boolean,
   highlightOrder?: number, // Optional field for ordering highlights
-  shortDescription: string,
-  description: string[],
+  shortDescription: MultiPartDescription[],
+  description: MultiPartDescription[],
 }
 
 export interface Link {
@@ -64,7 +71,7 @@ export interface Contact {
   position: string,
   address: string,
   emails: string[],
-  description: string[],
+  description: MultiPartDescription[],
   footnoteMessage: string,
 }
 

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import type { Project } from "../types";
+import { MultiParagraphDescription } from "./MultiParagraphDescription";
 
 interface CardProjectItemProps {
   project: Project,
@@ -20,7 +21,9 @@ export function CardProjectItem({ project, index, width, height }: CardProjectIt
           </p>
         </div>
         <div className="card-body">
-          <p className="card-text">{project.shortDescription}</p>
+          <p className="card-text" style={{ minHeight: '120px', maxHeight: '200px', overflow: 'hidden' }}>
+            <MultiParagraphDescription description={project.shortDescription} />
+          </p>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               <NavLink to={`/project/${project.id}`} className="btn btn-sm btn-outline-primary">

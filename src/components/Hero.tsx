@@ -1,6 +1,7 @@
 import avatarUrl from '../assets/portfolio-avatar.jpg';
 import type { Contact, ResearchInterest, Skill } from '../types';
 import Icon from './Icon';
+import { MultiParagraphDescription } from './MultiParagraphDescription';
 
 interface HeroProps {
   contact: Contact,
@@ -21,11 +22,15 @@ function Hero({contact, researchInterests, skills}: HeroProps) {
           <h5 className="text-body-secondary">
             {contact.position} at the <a href={contact.affiliation.url} className="text-decoration-none">{contact.affiliation.name}</a>
           </h5>
-          {contact.description.map(text => (
+          <p className="lead">
+            <MultiParagraphDescription description={contact.description} />
+          {/* {contact.description.map(text => (
+
             <p className="lead">
               {text}
             </p>
-          ))}
+          ))} */}
+          </p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
             <div className='col-md-4'>
               <h4 className="fw-normal">Research Interests</h4>

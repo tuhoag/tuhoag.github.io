@@ -12,11 +12,21 @@ const contact: Contact = {
   address: 'Hamburg, Germany',
   emails: ['tu.hoang@tuhh.de', 'contact@tuhoang.me'],
   description: [
-    'My research focuses on bridging the gap between academia and industry through collaborations with companies (e.g., IOTA, Pantos) and involvement in European research projects (e.g., CONCORDIA, CDL-BOT).',
+    [
+      'My research focuses on bridging the gap between academia and industry through collaborations with companies (e.g., ',
+      {url: 'https://www.iota.org/', text: 'IOTA Foundation'},
+      ', ',
+      {url: 'https://www.pantos.io/', text: 'Pantos'},
+      ') and involvement in European research projects (e.g., ',
+      {url: 'https://www.concordia-h2020.eu', text: 'CONCORDIA'},
+      ', ',
+      {url: 'https://www.cdl-bot.at/en', text: 'CDL-BOT'},
+      ').',
+    ],
     `I supervise students at all levels, including Bachelor's, Master's, and Ph.D., and have worked internationally in Germany, Italy, Japan, and Vietnam.`,
     'I also contribute to the academic community by reviewing for top-ranked journals and international conferences.'
   ],
-  footnoteMessage: `I'm open to industry collaboration and exploring new roles in privacy, security, machine learning, and decentralized systems. Feel free to reach out.`,
+  footnoteMessage: `I'm open to industry collaboration and exploring new roles in privacy, security, web3, machine learning, and decentralized systems. Feel free to reach out.`,
 }
 
 const researchInterests: ResearchInterest[] = [
@@ -24,6 +34,16 @@ const researchInterests: ResearchInterest[] = [
     title: 'Privacy / Security',
     url: '#',
     icon: 'pri-sec'
+  },
+  {
+    title: 'Cryptography',
+    url: '#',
+    icon: 'cryptography'
+  },
+  {
+    title: 'Web3',
+    url: '#',
+    icon: 'web'
   },
   {
     title: 'Machine Learning',
@@ -35,11 +55,6 @@ const researchInterests: ResearchInterest[] = [
     url: '#',
     icon: 'distributed-system'
   },
-  {
-    title: 'Cryptography',
-    url: '#',
-    icon: 'cryptography'
-  }
 ]
 
 const socialAccounts: Link[] = [

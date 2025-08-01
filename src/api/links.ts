@@ -15,10 +15,10 @@ const siteLinks = [
     title: 'Talks',
     url: '/talks',
   },
-  {
-    title: 'About',
-    url: '/about',
-  },
+  // {
+  //   title: 'About',
+  //   url: '/about',
+  // },
 ];
 
 export function getSiteLinks() {

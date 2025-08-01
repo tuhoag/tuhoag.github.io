@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import type { Project } from "../types";
+import { MultiParagraphDescription } from "./MultiParagraphDescription";
 
 interface DashboardProjectItemProps {
   project: Project,
@@ -24,12 +25,11 @@ export function DashboardProjectItem({ project, index, width, height }: Dashboar
           </span>
         </h2>
         <p className="lead mb-3">
-          {project.shortDescription}
+          <MultiParagraphDescription description={project.shortDescription} />
         </p>
         <NavLink to={`/project/${project.id}`} className="btn btn-sm btn-outline-primary mb-3">
           See more
         </NavLink>
-        {/* <button className="btn btn-sm btn-outline-primary">See more</button> */}
       </div>
       <div className="col-md-5">
         <img src={project.imageUrl || 'https://via.placeholder.com/100'} width={width} height={height} className="card-img-top" alt={project.name} />
